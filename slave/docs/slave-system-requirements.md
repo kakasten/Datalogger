@@ -8,7 +8,7 @@ The goal is to establish the minimum required features for the first Slave PCB d
 
 ---
 
-# Slave Overview
+## Slave Overview
 
 The Datalogger Slave is a distributed data acquisition module responsible for:
 
@@ -22,18 +22,18 @@ The Slave should be designed as a robust acquisition module, not as a control un
 
 ---
 
-# Functional Requirements
+## Functional Requirements
 
 ## Sensor Acquisition
 
-The Slave must support multiple types of automotive sensors:
+The Slave must support multiple types of automotive sensors.
 
 ### Analog Inputs
 
 Required:
 
 * Measurement range compatible with automotive sensors
-* Support for automotive voltage signals (0-12 V) through input conditioning circuits.
+* Support for automotive voltage signals (0-12 V) through input conditioning circuits
 * Input protection
 * Analog filtering before ADC
 
@@ -50,7 +50,7 @@ Initial target:
 
 ---
 
-## Digital Inputs
+### Digital Inputs
 
 Required:
 
@@ -70,7 +70,7 @@ Initial target:
 
 ---
 
-## Frequency Inputs
+### Frequency Inputs
 
 Required for sensors that provide pulse signals.
 
@@ -88,7 +88,7 @@ Requirements:
 
 ---
 
-# Outputs
+## Outputs
 
 Outputs are not required for the first Slave version.
 
@@ -104,9 +104,9 @@ These can be considered in future revisions if required.
 
 ---
 
-# Power System
+## Power System
 
-## Input Supply
+### Input Supply
 
 The Slave receives:
 
@@ -153,40 +153,44 @@ Requirements:
 
 ---
 
-## Sensor Supply
+### Sensor Supply
 
 The Slave should provide regulated sensor supply outputs.
 
 Requirements:
 
-- 5 V sensor supply
-- Current protection
-- Filtering
-- Monitoring capability
+* 5 V sensor supply
+* Current protection
+* Filtering
+* Monitoring capability
 
 Examples:
 
-- Pressure sensors
-- Potentiometers
-- Temperature sensors
+* Pressure sensors
+* Potentiometers
+* Temperature sensors
 
-# Communication
+---
 
-# Interface Requirements
+## Communication
 
-The Slave board must provide hardware interfaces for sensor acquisition, communication, debugging and future expansion.
+### Interface Requirements
 
-| Interface | Purpose | Required | Notes |
-|-----------|---------|----------|-------|
-| CAN | Main communication interface | Yes | Communication with external modules, 500 kbps target |
-| ADC | Analog sensor acquisition | Yes | Internal or external ADC, 0-5 V / 0-12 V conditioned inputs |
-| GPIO | Digital inputs and status signals | Yes | Protected automotive digital inputs |
-| Timer Input Capture | Frequency measurement | Yes | Wheel speed, Hall sensors, encoder signals |
-| I2C | External sensor expansion | Yes | Low-speed sensors, ADCs, temperature sensors |
-| SPI | High-speed peripherals expansion | Optional | External ADCs, memory, communication devices |
-| UART | Debug and external communication | Yes | Firmware debugging and configuration |
-| SWD/JTAG | Programming and debugging | Yes | MCU programming and real-time debugging |
-| PWM | Output control | No | Not required in first revision |
+The Slave board must provide hardware interfaces for sensor acquisition, communication, debugging, and future expansion.
+
+| Interface           | Purpose                           | Required | Notes                                                       |
+| ------------------- | --------------------------------- | -------- | ----------------------------------------------------------- |
+| CAN                 | Main communication interface      | Yes      | Communication with external modules, 500 kbps target        |
+| ADC                 | Analog sensor acquisition         | Yes      | Internal or external ADC, 0-5 V / 0-12 V conditioned inputs |
+| GPIO                | Digital inputs and status signals | Yes      | Protected automotive digital inputs                         |
+| Timer Input Capture | Frequency measurement             | Yes      | Wheel speed, Hall sensors, encoder signals                  |
+| I2C                 | External sensor expansion         | Yes      | Low-speed sensors, ADCs, temperature sensors                |
+| SPI                 | High-speed peripherals expansion  | Optional | External ADCs, memory, communication devices                |
+| UART                | Debug and external communication  | Yes      | Firmware debugging and configuration                        |
+| SWD/JTAG            | Programming and debugging         | Yes      | MCU programming and real-time debugging                     |
+| PWM                 | Output control                    | No       | Not required in first revision                              |
+
+---
 
 ## CAN Interface
 
@@ -206,7 +210,7 @@ Target:
 
 ---
 
-# Microcontroller Requirements
+## Microcontroller Requirements
 
 The MCU must support:
 
@@ -222,11 +226,11 @@ Required peripherals:
 
 ---
 
-# Diagnostics and Safety
+## Diagnostics and Safety
 
-The Slave should provide:
+The Slave should provide monitoring mechanisms for system reliability.
 
-## Status Monitoring
+### Status Monitoring
 
 Required indicators:
 
@@ -236,7 +240,7 @@ Required indicators:
 
 ---
 
-## Protection Features
+### Protection Features
 
 Required:
 
@@ -248,7 +252,7 @@ Required:
 
 ---
 
-# PCB Requirements
+## PCB Requirements
 
 The PCB should include:
 
@@ -257,5 +261,3 @@ The PCB should include:
 * Debug connector
 * Expandable GPIO
 * Reliable automotive connectors
-
----

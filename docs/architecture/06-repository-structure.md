@@ -40,6 +40,10 @@ amp-datalogger/
 │   │
 │   └── diagrams/
 │
+├── commons/
+│   └── hardware/
+│       └── kicad/
+│
 ├── master/
 │
 ├── slave/
@@ -124,6 +128,22 @@ Examples:
 - SVG
 - PNG
 - PDF
+
+---
+
+### commons/
+
+Contains resources shared across multiple projects in the repository.
+
+This directory is intended for reusable assets that are not specific to a single module.
+
+Current contents:
+
+- Shared KiCad symbol libraries
+- Shared KiCad footprint libraries
+- KiCad project templates
+
+As the project evolves, additional shared resources may be added while keeping them independent from the Master, Slave, and ATE projects.
 
 ---
 

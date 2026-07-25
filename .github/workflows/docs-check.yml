@@ -1,0 +1,43 @@
+name: Documentation Check
+
+on:
+  push:
+    branches:
+      - develop
+      - main
+    paths:
+      - '**/*.md'
+
+  pull_request:
+    branches:
+      - develop
+      - main
+    paths:
+      - '**/*.md'
+
+permissions:
+  contents: read
+
+jobs:
+  markdown-lint:
+    name: Markdown Lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run markdownlint
+        uses: DavidAnson/markdownlint-cli2-action@v20
+        with:
+          globs: |
+            **/*.md
+
+  markdown-links:
+    name: Check Markdown Links
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check links
+        uses: gaurav-nelson/github-action-markdown-link-check@v1

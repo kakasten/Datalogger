@@ -40,111 +40,111 @@ The CAN bus serves as the system backbone, connecting the Master module to one o
 
 ## Communication Interfaces
 
-| Interface | Purpose | Scope |
-|-----------|---------|-------|
-| CAN | Communication between Master and Slave modules | System |
-| I²C | Local communication with peripherals | Local |
-| SPI | High-speed peripheral communication | Local |
-| UART | Point-to-point communication with external devices | Local |
-| Ethernet | Development and high-speed communication | External |
-| USB | Programming, debugging and maintenance | External |
+| Interface | Purpose                                            | Scope    |
+| --------- | -------------------------------------------------- | -------- |
+| CAN       | Communication between Master and Slave modules     | System   |
+| I²C       | Local communication with peripherals               | Local    |
+| SPI       | High-speed peripheral communication                | Local    |
+| UART      | Point-to-point communication with external devices | Local    |
+| Ethernet  | Development and high-speed communication           | External |
+| USB       | Programming, debugging and maintenance             | External |
 
 ---
 
 ## CAN Network
 
-### Purpose
+### CAN Purpose
 
 The CAN bus is the primary communication channel of the Datalogger system.
 
-### Responsibilities
+### CAN Responsibilities
 
-- Master ↔ Slave communication
-- Sensor data transmission
-- Configuration messages
-- Diagnostics
-- System status
+* Master ↔ Slave communication
+* Sensor data transmission
+* Configuration messages
+* Diagnostics
+* System status
 
-### Characteristics
+### CAN Characteristics
 
-- Multi-drop topology
-- Differential signaling
-- High reliability
-- Fault tolerant
-- Real-time communication
+* Multi-drop topology
+* Differential signaling
+* High reliability
+* Fault tolerant
+* Real-time communication
 
 ---
 
 ## I²C
 
-### Purpose
+### I²C Purpose
 
 Provides communication with low-speed peripherals located on each module.
 
-### Typical Devices
+### I²C Typical Devices
 
-- ADCs
-- GPIO expanders
-- I²C multiplexers
-- Environmental sensors
+* ADCs
+* GPIO expanders
+* I²C multiplexers
+* Environmental sensors
 
 ---
 
 ## SPI
 
-### Purpose
+### SPI Purpose
 
 Provides high-speed communication with local peripherals.
 
-### Typical Devices
+### SPI Typical Devices
 
-- High-speed ADCs
-- External memory
-- Displays
+* High-speed ADCs
+* External memory
+* Displays
 
 ---
 
 ## UART
 
-### Purpose
+### UART Purpose
 
 Provides point-to-point communication with external devices.
 
-### Typical Devices
+### UART Typical Devices
 
-- GNSS receivers
-- IMUs
-- Debug interfaces
+* GNSS receivers
+* IMUs
+* Debug interfaces
 
 ---
 
 ## Ethernet
 
-### Purpose
+### Ethernet Purpose
 
 Provides a high-speed interface for development and data transfer.
 
-### Typical Applications
+### Ethernet Typical Applications
 
-- ROS 2 communication
-- Software deployment
-- Data download
-- Remote diagnostics
+* ROS 2 communication
+* Software deployment
+* Data download
+* Remote diagnostics
 
 ---
 
 ## USB
 
-### Purpose
+### USB Purpose
 
 Provides direct access for programming, debugging, and maintenance.
 
-### Typical Applications
+### USB Typical Applications
 
-- Firmware upload
-- Debugging
-- Serial console
-- Device configuration
+* Firmware upload
+* Debugging
+* Serial console
+* Device configuration
 
 ---
 
@@ -152,9 +152,9 @@ Provides direct access for programming, debugging, and maintenance.
 
 The communication architecture follows these principles:
 
-- Distributed data acquisition
-- Standard communication interfaces
-- Modular design
-- Fault isolation
-- Scalable architecture
-- Reliable real-time communication
+* Distributed data acquisition
+* Standard communication interfaces
+* Modular design
+* Fault isolation
+* Scalable architecture
+* Reliable real-time communication

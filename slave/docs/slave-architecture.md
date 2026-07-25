@@ -1,11 +1,13 @@
 # Datalogger Slave Architecture
 
-| Field | Description |
-|---|---|
-| Module | Slave |
+| Field         | Description  |
+| ------------- | ------------ |
+| Module        | Slave        |
 | Document Type | Architecture |
-| Status | Draft |
-| Version | 0.1 |
+| Status        | Draft        |
+| Version       | 0.1          |
+
+---
 
 ## Objective
 
@@ -17,7 +19,7 @@ The Slave is designed as a distributed data acquisition module focused on reliab
 
 ---
 
-# System Overview
+## System Overview
 
 The Datalogger Slave is an embedded acquisition unit responsible for collecting data from multiple vehicle sensors, performing local signal processing, and transmitting measurements through the CAN network.
 
@@ -33,15 +35,15 @@ The Slave architecture is divided into the following main subsystems:
 
 ---
 
-# High-Level Architecture
+## High-Level Architecture
 
-```
+```text
                  Vehicle Power
                       |
                     12V
                       |
               +----------------+
-              | Power Management|
+              | Power Management |
               +----------------+
                  |          |
                 5V         3.3V
@@ -51,25 +53,23 @@ The Slave architecture is divided into the following main subsystems:
  Sensor Supply              Processing Unit
         |                         |
  Sensors                  +--------------+
-        |                 | MCU           |
-        |                 |               |
-        |                 | ADC           |
-        |                 | Timers        |
-        |                 | CAN           |
+        |                 | MCU          |
+        |                 |              |
+        |                 | ADC          |
+        |                 | Timers       |
+        |                 | CAN          |
         |                 +--------------+
         |
  Signal Conditioning
         |
-        |
  CAN Network <---------- CAN Transceiver
-
 ```
 
 ---
 
-# Power Architecture
+## Power Architecture
 
-## Input Stage
+### Input Stage
 
 The Slave receives power from the vehicle electrical system.
 
@@ -124,7 +124,7 @@ Requirements:
 
 ---
 
-# Sensor Interface Architecture
+## Sensor Interface Architecture
 
 The Slave supports different sensor types through dedicated input stages.
 
@@ -134,7 +134,7 @@ The Slave supports different sensor types through dedicated input stages.
 
 Architecture:
 
-```
+```text
 Sensor
   |
 Protection
@@ -167,7 +167,7 @@ Characteristics:
 
 Architecture:
 
-```
+```text
 Digital Sensor
       |
 Protection
@@ -197,7 +197,7 @@ Requirements:
 
 Architecture:
 
-```
+```text
 Pulse Sensor
       |
 Protection
@@ -222,9 +222,9 @@ Requirements:
 
 ---
 
-# Processing Architecture
+## Processing Architecture
 
-## Microcontroller
+### Microcontroller
 
 The MCU is responsible for:
 
@@ -249,20 +249,18 @@ Required peripherals:
 
 ---
 
-# Communication Architecture
+## Communication Architecture
 
-## CAN Interface
+### CAN Interface
 
 CAN is the primary communication interface.
 
 Architecture:
 
-```
+```text
 MCU CAN Peripheral
         |
-        |
  CAN Transceiver
-        |
         |
  CAN Bus
 ```
@@ -280,11 +278,11 @@ Target:
 
 ---
 
-# Expansion Interfaces
+## Expansion Interfaces
 
 The Slave provides additional interfaces for future hardware expansion.
 
-## I2C
+### I2C Interface
 
 Purpose:
 
@@ -299,7 +297,7 @@ Characteristics:
 
 ---
 
-## SPI
+### SPI Interface
 
 Purpose:
 
@@ -314,7 +312,7 @@ Characteristics:
 
 ---
 
-## UART
+### UART Interface
 
 Purpose:
 
@@ -324,11 +322,11 @@ Purpose:
 
 ---
 
-# Diagnostics Architecture
+## Diagnostics Architecture
 
 The Slave must provide mechanisms for monitoring its own operation.
 
-## Hardware Monitoring
+### Hardware Monitoring
 
 Includes:
 
@@ -338,7 +336,7 @@ Includes:
 
 ---
 
-## Fault Detection
+### Fault Detection
 
 The system should monitor:
 
@@ -349,11 +347,11 @@ The system should monitor:
 
 ---
 
-# Firmware Architecture
+## Firmware Architecture
 
 The firmware should be organized into independent layers.
 
-```
+```text
 Application Layer
         |
 Sensor Management
@@ -399,11 +397,11 @@ Responsible for:
 
 ---
 
-# PCB Architecture Guidelines
+## PCB Architecture Guidelines
 
 The PCB should follow these principles:
 
-## Analog / Digital Separation
+### Analog / Digital Separation
 
 Analog acquisition circuits should be separated from:
 
@@ -413,7 +411,7 @@ Analog acquisition circuits should be separated from:
 
 ---
 
-## Protection Placement
+### Protection Placement
 
 Protection components should be placed close to connectors:
 
@@ -423,7 +421,7 @@ Protection components should be placed close to connectors:
 
 ---
 
-## Debug Access
+### Debug Access
 
 The PCB should include:
 
@@ -433,7 +431,7 @@ The PCB should include:
 
 ---
 
-# Design Principles
+## Design Principles
 
 The Slave architecture follows these principles:
 
@@ -446,7 +444,7 @@ The Slave architecture follows these principles:
 
 ---
 
-# Future Extensions
+## Future Extensions
 
 Possible future additions:
 
