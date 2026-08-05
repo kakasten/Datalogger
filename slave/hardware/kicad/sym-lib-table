@@ -1,3 +1,4 @@
 (sym_lib_table
 	(version 7)
+	(lib (name "L9616") (type "KiCad") (uri "/home/kakasten/Downloads/LIB_L9616/L9616/KiCad/L9616.kicad_sym") (options "") (descr ""))
 )
