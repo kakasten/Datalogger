@@ -4027,7 +4027,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SOT65P210X110-5N"
+		(property "Footprint" "Datalogger:SOT65P210X110-5N"
 			(at 81.28 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -4537,7 +4537,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SOT65P210X110-5N"
+		(property "Footprint" "Datalogger:SOT65P210X110-5N"
 			(at 189.23 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -4702,7 +4702,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SOT65P210X110-5N"
+		(property "Footprint" "Datalogger:SOT65P210X110-5N"
 			(at 189.23 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -7243,7 +7243,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SOT65P210X110-5N"
+		(property "Footprint" "Datalogger:SOT65P210X110-5N"
 			(at 81.28 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -8538,7 +8538,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SOT65P210X110-5N"
+		(property "Footprint" "Datalogger:SOT65P210X110-5N"
 			(at 190.5 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -9559,7 +9559,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SOT65P210X110-5N"
+		(property "Footprint" "Datalogger:SOT65P210X110-5N"
 			(at 81.28 160.02 0)
 			(hide yes)
 			(show_name no)

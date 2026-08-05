@@ -4176,7 +4176,7 @@
 				)
 			)
 		)
-		(property "Footprint" "QFP50P900X900X160-48N"
+		(property "Footprint" "Datalogger:QFP50P900X900X160-48N"
 			(at 216.154 106.426 0)
 			(hide yes)
 			(show_name no)
@@ -7706,7 +7706,7 @@
 				)
 			)
 		)
-		(property "Footprint" "QFP50P900X900X160-48N"
+		(property "Footprint" "Datalogger:QFP50P900X900X160-48N"
 			(at 82.804 105.156 0)
 			(hide yes)
 			(show_name no)

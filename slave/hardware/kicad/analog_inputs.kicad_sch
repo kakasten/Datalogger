@@ -5207,7 +5207,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOP65P490X110-8N"
+		(property "Footprint" "Datalogger:SOP65P490X110-8N"
 			(at 284.48 190.17 0)
 			(hide yes)
 			(show_name no)
@@ -7115,7 +7115,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOP65P490X110-8N"
+		(property "Footprint" "Datalogger:SOP65P490X110-8N"
 			(at 161.29 225.73 0)
 			(hide yes)
 			(show_name no)
@@ -8838,7 +8838,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOP65P490X110-8N"
+		(property "Footprint" "Datalogger:SOP65P490X110-8N"
 			(at 161.29 266.37 0)
 			(hide yes)
 			(show_name no)
@@ -9153,7 +9153,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOP65P490X110-8N"
+		(property "Footprint" "Datalogger:SOP65P490X110-8N"
 			(at 284.48 225.73 0)
 			(hide yes)
 			(show_name no)
@@ -9468,7 +9468,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOP65P490X110-8N"
+		(property "Footprint" "Datalogger:SOP65P490X110-8N"
 			(at 161.29 301.93 0)
 			(hide yes)
 			(show_name no)
@@ -11389,7 +11389,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOP65P490X110-8N"
+		(property "Footprint" "Datalogger:SOP65P490X110-8N"
 			(at 284.48 266.37 0)
 			(hide yes)
 			(show_name no)
@@ -12590,7 +12590,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOP65P490X110-8N"
+		(property "Footprint" "Datalogger:SOP65P490X110-8N"
 			(at 284.48 301.93 0)
 			(hide yes)
 			(show_name no)
@@ -14083,7 +14083,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOP65P490X110-8N"
+		(property "Footprint" "Datalogger:SOP65P490X110-8N"
 			(at 161.29 190.17 0)
 			(hide yes)
 			(show_name no)

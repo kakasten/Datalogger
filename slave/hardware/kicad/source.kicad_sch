@@ -5248,7 +5248,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOP65P280X100-8N"
+		(property "Footprint" "Datalogger:SOIC127P600X175-8N"
 			(at 220.98 149.53 0)
 			(hide yes)
 			(show_name no)
@@ -6614,7 +6614,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOIC127P600X175-8N"
+		(property "Footprint" "Datalogger:SOIC127P600X175-8N"
 			(at 152.4 146.99 0)
 			(hide yes)
 			(show_name no)
@@ -8155,7 +8155,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOIC127P600X175-8N"
+		(property "Footprint" "Datalogger:SOIC127P600X175-8N"
 			(at 152.4 188.9 0)
 			(hide yes)
 			(show_name no)
@@ -12642,7 +12642,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOP65P280X100-8N"
+		(property "Footprint" "Datalogger:SOIC127P600X175-8N"
 			(at 220.98 191.44 0)
 			(hide yes)
 			(show_name no)
