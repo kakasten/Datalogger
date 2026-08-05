@@ -2,18 +2,18 @@ name: Documentation Check
 
 on:
   push:
-    branches:
-      - develop
-      - main
     paths:
+      - '*.md'
+      - '*.MD'
       - '**/*.md'
+      - '**/*.MD'
 
   pull_request:
-    branches:
-      - develop
-      - main
     paths:
+      - '*.md'
+      - '*.MD'
       - '**/*.md'
+      - '**/*.MD'
 
 permissions:
   contents: read
@@ -30,7 +30,10 @@ jobs:
         uses: DavidAnson/markdownlint-cli2-action@v20
         with:
           globs: |
+            *.md
+            *.MD
             **/*.md
+            **/*.MD
 
   markdown-links:
     name: Check Markdown Links
