@@ -4499,7 +4499,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 			(color 255 0 0 1)
 		)
 		(uuid "d1cad48e-fd3f-4f37-9d1a-74917754425e")

@@ -2346,7 +2346,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type dash_dot)
 		)
 		(uuid "2d699e1f-b980-4d8e-a2f4-008e0e6d9165")
 	)
@@ -2356,7 +2356,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type dash_dot)
 		)
 		(uuid "2da4c60b-18fc-4763-bf43-4ae2aac3f922")
 	)
@@ -2388,7 +2388,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type dash_dot)
 		)
 		(uuid "300b3b61-d06b-4d20-9bbf-81d53f10fa74")
 	)
@@ -2519,7 +2519,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type dash_dot)
 		)
 		(uuid "41aa5609-b8f0-4e4c-8434-86eb503486b3")
 	)
@@ -2529,7 +2529,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type dash_dot)
 		)
 		(uuid "420d2919-e97b-4668-9a39-b9d78a3c097f")
 	)
@@ -2671,7 +2671,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type dash_dot)
 		)
 		(uuid "4d5db5e3-e143-4d49-9955-e678bfe06657")
 	)
@@ -2802,7 +2802,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type dash_dot)
 		)
 		(uuid "5a6215fe-2369-4d5d-9a04-3799de6ca8e8")
 	)
@@ -2900,7 +2900,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type dash_dot)
 		)
 		(uuid "61464761-ec4a-4d13-8275-42cb9aad65ab")
 	)
@@ -3207,7 +3207,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type dash_dot)
 		)
 		(uuid "7abf3dd3-25f7-43d9-9a98-3ffbdfe2708c")
 	)
@@ -3393,7 +3393,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type dash_dot)
 		)
 		(uuid "8fd85077-3d6b-489c-b133-5729633dff8e")
 	)
@@ -3458,7 +3458,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type dash_dot)
 		)
 		(uuid "95f3f080-c7cd-4d75-ac6a-67846d89912b")
 	)
@@ -3677,7 +3677,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type dash_dot)
 		)
 		(uuid "afdb8bf0-9c9d-489e-9892-139f7bc66ed0")
 	)
@@ -3786,7 +3786,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type dash_dot)
 		)
 		(uuid "b93ecf08-79dd-4d8f-b026-6899202cd2c3")
 	)
@@ -3928,7 +3928,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type dash_dot)
 		)
 		(uuid "c508c510-41cb-41cd-9c53-971d5105b444")
 	)
@@ -4103,7 +4103,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type dash_dot)
 		)
 		(uuid "d6dcc9c5-db4f-46c7-8a42-c86fa4e5e900")
 	)
@@ -4223,7 +4223,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type dash_dot)
 		)
 		(uuid "e015e932-2137-42d5-b1da-8ce34e2b1d55")
 	)
