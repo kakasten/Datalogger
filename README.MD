@@ -218,9 +218,7 @@ Contributions are welcome! To propose improvements, fixes, or new features:
 
 For questions, partnerships, or sponsorship proposals, get in touch with the team:
 
-- **Email:** _add contact email_
-- **Instagram/LinkedIn:** _add links_
-- **Team website:** _add link_
+- **Email:** _luizfernandosilveriofelisbino@gmail.com_
 
 ---
 
