@@ -1,0 +1,36 @@
+name: Hardware Check
+
+on:
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  kicad-check:
+    name: KiCad ERC and DRC
+    runs-on: self-hosted
+
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install KiCad
+        run: |
+          sudo apt update
+          sudo apt install -y kicad
+
+      - name: Run ERC on all schematics
+        run: |
+          find . -name "*.kicad_sch" ! -path "*backup*" | while read file; do
+            echo "Running ERC on $file"
+            kicad-cli sch erc "$file" --exit-code-violations
+          done
+
+      - name: Run DRC on all PCBs
+        run: |
+          find . -name "*.kicad_pcb" ! -path "*backup*" | while read file; do
+            echo "Running DRC on $file"
+            kicad-cli pcb drc "$file" --exit-code-violations
+          done
