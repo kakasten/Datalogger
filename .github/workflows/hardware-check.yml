@@ -9,7 +9,7 @@ on:
 jobs:
   kicad-check:
     name: KiCad ERC and DRC
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
 
