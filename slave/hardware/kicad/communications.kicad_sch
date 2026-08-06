@@ -3021,7 +3021,7 @@
 		)
 		(uuid "fcfb8a0a-7d9c-4b94-8fb9-b42d2fce0d6b")
 	)
-	(global_label "CAN_TX"
+	(global_label "CAN_RX"
 		(shape input)
 		(at 143.51 55.88 0)
 		(fields_autoplaced yes)
@@ -3034,7 +3034,7 @@
 		)
 		(uuid "14016d34-8db7-4066-9a91-b98849a38ed7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 150.3831 55.88 0)
+			(at 150.5948 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
