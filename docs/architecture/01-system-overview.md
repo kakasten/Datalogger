@@ -8,12 +8,12 @@ The Datalogger system is a modular data acquisition platform designed for Formul
 
 ## System Objectives
 
-- Acquire data from analog, digital, frequency, and CAN sensors.
-- Provide a modular and scalable hardware architecture.
-- Minimize wiring complexity by distributing sensor acquisition.
-- Ensure reliable communication between all modules.
-- Store synchronized vehicle data for post-processing.
-- Support real-time telemetry and diagnostics.
+* Acquire data from analog, digital, frequency, and CAN sensors.
+* Provide a modular and scalable hardware architecture.
+* Minimize wiring complexity by distributing sensor acquisition.
+* Ensure reliable communication between all modules.
+* Store synchronized vehicle data for post-processing.
+* Support real-time telemetry and diagnostics.
 
 ---
 
@@ -21,8 +21,8 @@ The Datalogger system is a modular data acquisition platform designed for Formul
 
 The system is composed of two primary modules:
 
-- Master
-- Slave
+* Master
+* Slave
 
 Each Slave is responsible for acquiring sensors located near its installation point, while the Master is responsible for coordinating the system, logging data, and interfacing with external devices.
 
@@ -51,6 +51,8 @@ Each Slave is responsible for acquiring sensors located near its installation po
           Vehicle Sensors                                   Vehicle Sensors
 ```
 
+---
+
 ## Data Flow
 
 1. Sensors generate electrical signals.
@@ -63,11 +65,11 @@ Each Slave is responsible for acquiring sensors located near its installation po
 
 ## Main Features
 
-- Distributed acquisition
-- CAN-based communication
-- Modular hardware
-- ROS 2 software architecture
-- Local data logging
-- Telemetry support
-- Fault isolation
-- Expandable architecture
+* Distributed acquisition
+* CAN-based communication
+* Modular hardware
+* ROS 2 software architecture
+* Local data logging
+* Telemetry support
+* Fault isolation
+* Expandable architecture
