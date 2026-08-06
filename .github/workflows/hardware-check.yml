@@ -12,16 +12,17 @@ jobs:
   kicad-check:
     name: KiCad ERC and DRC
     runs-on: self-hosted
+    container:
+      image: kicad/kicad:10.0
 
     steps:
 
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install KiCad
+      - name: Check KiCad version
         run: |
-          sudo apt update
-          sudo apt install -y kicad
+          kicad-cli --version
 
       - name: Run ERC on all schematics
         run: |
