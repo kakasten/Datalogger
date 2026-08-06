@@ -27,15 +27,30 @@ jobs:
 
       - name: Run ERC on all schematics
         run: |
-          set -e
-          find . -name "*.kicad_sch" ! -path "*backup*" | while read file; do
+          error=0
+
+          while read file; do
             echo "Running ERC on $file"
-            kicad-cli sch erc "$file" --exit-code-violations
-          done
+
+            if ! kicad-cli sch erc "$file" --exit-code-violations; then
+              error=1
+            fi
+
+          done < <(find . -name "*.kicad_sch" ! -path "*backup*" ! -path "*/.history/*")
+
+          exit $error
 
       - name: Run DRC on all PCBs
         run: |
-          find . -name "*.kicad_pcb" ! -path "*backup*" | while read file; do
+          error=0
+
+          while read file; do
             echo "Running DRC on $file"
-            kicad-cli pcb drc "$file" --exit-code-violations
-          done
+
+            if ! kicad-cli pcb drc "$file" --exit-code-violations; then
+              error=1
+            fi
+
+          done < <(find . -name "*.kicad_pcb" ! -path "*backup*" ! -path "*/.history/*")
+
+          exit $error
