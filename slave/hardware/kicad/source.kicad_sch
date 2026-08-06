@@ -3886,7 +3886,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type dash_dot_dot)
 		)
 		(uuid "75eee732-5188-4e34-9a42-a9503bc1e0e6")
 	)
@@ -3973,7 +3973,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type dash_dot_dot)
 		)
 		(uuid "83b96f51-9a54-4f1c-8eb0-c8bf9fde57f5")
 	)
@@ -4478,7 +4478,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type dash_dot_dot)
 		)
 		(uuid "cea2c271-e64b-469b-9e29-f0497ee06826")
 	)
@@ -4631,7 +4631,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type dash_dot_dot)
 		)
 		(uuid "dcee752c-1f95-4c96-94d0-3eae30e4bc3a")
 	)

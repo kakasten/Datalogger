@@ -3170,7 +3170,7 @@
 			)
 		)
 	)
-	(global_label "MCU_LS_02"
+	(global_label "MCU_LS_04"
 		(shape input)
 		(at 236.22 134.62 0)
 		(fields_autoplaced yes)
@@ -3194,7 +3194,7 @@
 			)
 		)
 	)
-	(global_label "MCU_LS_01"
+	(global_label "MCU_LS_03"
 		(shape input)
 		(at 128.27 134.62 0)
 		(fields_autoplaced yes)
@@ -3242,7 +3242,7 @@
 			)
 		)
 	)
-	(global_label "MCU_HS_03"
+	(global_label "MCU_LS_01"
 		(shape input)
 		(at 128.27 92.71 0)
 		(fields_autoplaced yes)
@@ -3254,7 +3254,7 @@
 		)
 		(uuid "9abda0a1-8de8-4e09-a415-0fe3344781fd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 142.2013 92.71 0)
+			(at 141.8989 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3314,7 +3314,7 @@
 			)
 		)
 	)
-	(global_label "MCU_HS_04"
+	(global_label "MCU_HS_02"
 		(shape input)
 		(at 236.22 92.71 0)
 		(fields_autoplaced yes)
