@@ -4313,7 +4313,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 			(color 255 243 0 1)
 		)
 		(uuid "b412a8d6-c612-432a-98d8-e145bc4de8c3")

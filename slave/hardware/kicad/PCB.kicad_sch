@@ -52,6 +52,52 @@
 		)
 	)
 	(sheet
+		(at 48.26 119.38)
+		(size 24.13 21.59)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "5160550a-89e0-4dc6-a66e-b828bca92105")
+		(property "Sheetname" "Vehicle Connections"
+			(at 48.26 118.6684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "vehicle_connections.kicad_sch"
+			(at 48.26 141.5546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PCB"
+				(path "/53ac5407-c20a-483b-9c15-01b665bcfde4"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 54.61 62.23)
 		(size 19.05 15.24)
 		(exclude_from_sim no)

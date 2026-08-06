@@ -670,7 +670,7 @@
         "uuid": "53ac5407-c20a-483b-9c15-01b665bcfde4"
       }
     ],
-    "used_designators": "J1-2,SW1-2,TP1-46,R1-100,L1-2,IC1-14,Y1,#PWR1-205,FB1-2,Q1-5,F1,D1-48,C1-59",
+    "used_designators": "J1-3,SW1-2,TP1-46,R1-100,L1-2,IC1-14,Y1,#PWR1-205,FB1-2,Q1-5,F1,D1-48,C1-59",
     "variants": []
   },
   "sheets": [
@@ -697,6 +697,10 @@
     [
       "fb10e29e-dbef-46cf-bf0a-c609d2ac4947",
       "Communications"
+    ],
+    [
+      "5160550a-89e0-4dc6-a66e-b828bca92105",
+      "Vehicle Connections"
     ]
   ],
   "text_variables": {},
