@@ -14,6 +14,7 @@ jobs:
     runs-on: self-hosted
     container:
       image: kicad/kicad:10.0
+      options: --user root
 
     steps:
 
@@ -26,6 +27,7 @@ jobs:
 
       - name: Run ERC on all schematics
         run: |
+          set -e
           find . -name "*.kicad_sch" ! -path "*backup*" | while read file; do
             echo "Running ERC on $file"
             kicad-cli sch erc "$file" --exit-code-violations
