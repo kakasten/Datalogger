@@ -1,0 +1,39 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP L6982CDR
+D Switching Voltage Regulators 38 V, 1.5 A synchronous step-down converter with low quiescent current
+K
+F https://www.st.com/resource/en/datasheet/l6982.pdf
+$ENDCMP
+#
+$CMP STEF12SGR
+D Electronic fuse for 12 V line
+K
+F https://www.st.com/resource/en/datasheet/stef12s.pdf
+$ENDCMP
+#
+$CMP STM32G431C8T6TR
+D Arm Cortex-M4 32-bit MCU+FPU, 170 MHz /213 DMIPS, up to 128 KB Flash, 32 KB SRAM, rich analog, math accelerator
+K
+F https://www.st.com/resource/en/datasheet/stm32g431c6.pdf
+$ENDCMP
+#
+$CMP TSV771ILT
+D High bandwidth (20 MHz) low offset (200 &#181;V) rail-to-rail 5V Op amp
+K
+F https://www.st.com/resource/en/datasheet/tsv771.pdf
+$ENDCMP
+#
+$CMP TSV772IST
+D High bandwidth (20MHz) Low offset (200 &#181;V) rail-to-rail 5V Op amp
+K
+F https://www.st.com/resource/en/datasheet/tsv771.pdf
+$ENDCMP
+#
+#End Doc Library
