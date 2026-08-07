@@ -12,27 +12,59 @@ jobs:
   kicad-check:
     name: KiCad ERC and DRC
     runs-on: self-hosted
+    container:
+      image: kicad/kicad:10.0
+      options: --user root
+
+    env:
+      KICAD9_SYMBOL_DIR: ${{ github.workspace }}/common/hardware/kicad/Library
+      KICAD9_FOOTPRINT_DIR: ${{ github.workspace }}/common/hardware/kicad/Library
 
     steps:
 
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install KiCad
+      - name: Check KiCad version
         run: |
-          sudo apt update
-          sudo apt install -y kicad
+          kicad-cli --version
 
-      - name: Run ERC on all schematics
+      - name: Check custom libraries
         run: |
-          find . -name "*.kicad_sch" ! -path "*backup*" | while read file; do
-            echo "Running ERC on $file"
-            kicad-cli sch erc "$file" --exit-code-violations
-          done
+          ls -la common/hardware/kicad/Library
+
+      - name: Run ERC on KiCad projects
+        run: |
+          error=0
+
+          find . -name "*.kicad_pro" ! -path "*backup*" ! -path "*/.history/*" > projects.txt
+
+          while read project; do
+            schematic="${project%.kicad_pro}.kicad_sch"
+
+            echo "Running ERC on $schematic"
+
+            if ! (cd "$(dirname "$schematic")" && kicad-cli sch erc "$(basename "$schematic")" --exit-code-violations); then
+              error=1
+            fi
+
+          done < projects.txt
+
+          exit $error
 
       - name: Run DRC on all PCBs
         run: |
-          find . -name "*.kicad_pcb" ! -path "*backup*" | while read file; do
+          error=0
+
+          find . -name "*.kicad_pcb" ! -path "*backup*" ! -path "*/.history/*" > pcbs.txt
+
+          while read file; do
             echo "Running DRC on $file"
-            kicad-cli pcb drc "$file" --exit-code-violations
-          done
+
+            if ! (cd "$(dirname "$file")" && kicad-cli pcb drc "$(basename "$file")" --exit-code-violations); then
+              error=1
+            fi
+
+          done < pcbs.txt
+
+          exit $error
