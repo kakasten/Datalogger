@@ -64,7 +64,7 @@
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
-          "remove_islands": 0,
+          "remove_islands": 1,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
         }
@@ -210,7 +210,8 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        1.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -670,7 +671,7 @@
         "uuid": "53ac5407-c20a-483b-9c15-01b665bcfde4"
       }
     ],
-    "used_designators": "TP1-46,R1-100,J1-4,SW1-2,#FLG1-8,C1-59,D1-48,U1,F1,Q1-5,#PWR1-205,Y1,IC1-14,FB1-2,L1-2",
+    "used_designators": "IC1-14,#PWR1-205,Y1,FB1-2,L1-2,R1-100,TP1-46,SW1-2,J1-4,C1-59,U1,D1-48,#FLG1-8,Q1-5,F1",
     "variants": []
   },
   "sheets": [

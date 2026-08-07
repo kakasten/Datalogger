@@ -7099,7 +7099,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 314.6552 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -7203,7 +7203,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 314.6552 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -9296,7 +9296,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 244.8052 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -9400,7 +9400,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 191.4652 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -9974,7 +9974,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 191.4652 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -10797,7 +10797,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 191.4652 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -11449,7 +11449,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 121.6152 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -11553,7 +11553,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 314.6552 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -11735,7 +11735,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 121.6152 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -12417,7 +12417,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 244.8052 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -12993,7 +12993,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 314.6552 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -13097,7 +13097,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 244.8052 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -13608,28 +13608,28 @@
 			)
 		)
 		(pin "4"
-			(uuid "c2970666-2d48-4a22-8030-6114c3e1c133")
+			(uuid "c2970666-2d48-4a22-8030-6114c3e1c134")
 		)
 		(pin "5"
-			(uuid "b91bfe74-3cf3-4cab-85f0-32d6b6a90d4a")
+			(uuid "b91bfe74-3cf3-4cab-85f0-32d6b6a90d4b")
 		)
 		(pin "3"
-			(uuid "3818d1bd-7643-442d-ae5c-c8e3f3c45223")
+			(uuid "3818d1bd-7643-442d-ae5c-c8e3f3c45224")
 		)
 		(pin "1"
-			(uuid "da758080-04b7-4cd5-8002-e869ab5de74a")
+			(uuid "da758080-04b7-4cd5-8002-e869ab5de74b")
 		)
 		(pin "8"
-			(uuid "a2969ce9-ad2e-4492-b1d1-af2b79af5038")
+			(uuid "a2969ce9-ad2e-4492-b1d1-af2b79af5039")
 		)
 		(pin "6"
-			(uuid "a7295ff2-6b88-44db-ba24-2c67842f7bdc")
+			(uuid "a7295ff2-6b88-44db-ba24-2c67842f7bdd")
 		)
 		(pin "2"
-			(uuid "7af149e2-9f0c-4620-a402-b9d0d75083aa")
+			(uuid "7af149e2-9f0c-4620-a402-b9d0d75083ab")
 		)
 		(pin "7"
-			(uuid "b1bfc060-1aca-4a28-ab49-515eb0729dab")
+			(uuid "b1bfc060-1aca-4a28-ab49-515eb0729dac")
 		)
 		(instances
 			(project "PCB"
@@ -13854,28 +13854,28 @@
 			)
 		)
 		(pin "5"
-			(uuid "8440319a-e3f9-40e4-9c14-262921fdc694")
+			(uuid "8440319a-e3f9-40e4-9c14-262921fdc695")
 		)
 		(pin "2"
-			(uuid "8e02cef7-993f-434a-a2f5-c4e27ab3487c")
+			(uuid "8e02cef7-993f-434a-a2f5-c4e27ab3487d")
 		)
 		(pin "1"
-			(uuid "112651ae-d234-40fe-a040-68821d590437")
+			(uuid "112651ae-d234-40fe-a040-68821d590438")
 		)
 		(pin "7"
-			(uuid "d03bb7e8-a962-46a1-af26-632bad88ac88")
+			(uuid "d03bb7e8-a962-46a1-af26-632bad88ac89")
 		)
 		(pin "8"
-			(uuid "086bb450-5778-470c-96fb-ce5e9e30801e")
+			(uuid "086bb450-5778-470c-96fb-ce5e9e30801f")
 		)
 		(pin "4"
-			(uuid "6ac403fa-af4e-45bf-9c88-b3253b643158")
+			(uuid "6ac403fa-af4e-45bf-9c88-b3253b643159")
 		)
 		(pin "3"
-			(uuid "ee5b5348-8bc8-4229-afe7-6c50e544b62d")
+			(uuid "ee5b5348-8bc8-4229-afe7-6c50e544b62e")
 		)
 		(pin "6"
-			(uuid "58d092a5-a521-4b2a-8671-9da5ba5f17bb")
+			(uuid "58d092a5-a521-4b2a-8671-9da5ba5f17bc")
 		)
 		(instances
 			(project "PCB"
@@ -14076,7 +14076,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 121.6152 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -14900,28 +14900,28 @@
 			)
 		)
 		(pin "7"
-			(uuid "d7bcb34d-d02d-4564-ac51-f13e696dda96")
+			(uuid "d7bcb34d-d02d-4564-ac51-f13e696dda97")
 		)
 		(pin "2"
-			(uuid "d9d284c9-066b-4711-bf26-343dc980b55b")
+			(uuid "d9d284c9-066b-4711-bf26-343dc980b55c")
 		)
 		(pin "6"
-			(uuid "a49be32d-5e40-4405-bf3d-ea37b972678f")
+			(uuid "a49be32d-5e40-4405-bf3d-ea37b9726790")
 		)
 		(pin "4"
-			(uuid "ffea4f73-918f-4197-8565-df8c510b8f87")
+			(uuid "ffea4f73-918f-4197-8565-df8c510b8f88")
 		)
 		(pin "5"
-			(uuid "9f67612a-8f6f-4d34-9918-ae94ee525466")
+			(uuid "9f67612a-8f6f-4d34-9918-ae94ee525467")
 		)
 		(pin "3"
-			(uuid "0b0b0b5f-7166-4736-ab3e-4822985b50ac")
+			(uuid "0b0b0b5f-7166-4736-ab3e-4822985b50ad")
 		)
 		(pin "8"
-			(uuid "85f0f20f-9589-4f46-b587-5dc4565cc935")
+			(uuid "85f0f20f-9589-4f46-b587-5dc4565cc936")
 		)
 		(pin "1"
-			(uuid "6798f230-ef34-46ef-84d6-59029a426fb9")
+			(uuid "6798f230-ef34-46ef-84d6-59029a426fba")
 		)
 		(instances
 			(project "PCB"
@@ -15443,7 +15443,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 244.8052 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -15885,7 +15885,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 121.6152 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -16345,28 +16345,28 @@
 			)
 		)
 		(pin "7"
-			(uuid "bef6a94d-3348-47f8-af8d-492e91829af4")
+			(uuid "bef6a94d-3348-47f8-af8d-492e91829af5")
 		)
 		(pin "5"
-			(uuid "7ae26f59-81f9-4310-b95f-087393ef2bf5")
+			(uuid "7ae26f59-81f9-4310-b95f-087393ef2bf6")
 		)
 		(pin "8"
-			(uuid "82b7519c-909c-417c-8660-2980491e6e0b")
+			(uuid "82b7519c-909c-417c-8660-2980491e6e0c")
 		)
 		(pin "4"
-			(uuid "ad9263ac-5c6a-4158-b86e-4a1b23859641")
+			(uuid "ad9263ac-5c6a-4158-b86e-4a1b23859642")
 		)
 		(pin "1"
-			(uuid "682a74f0-664f-4002-8c13-644ff3cc2a74")
+			(uuid "682a74f0-664f-4002-8c13-644ff3cc2a75")
 		)
 		(pin "6"
-			(uuid "ee144b6d-735b-4f15-91db-f40eed3eb098")
+			(uuid "ee144b6d-735b-4f15-91db-f40eed3eb099")
 		)
 		(pin "3"
-			(uuid "5825b178-a095-4ccb-9f82-b97d91b69a67")
+			(uuid "5825b178-a095-4ccb-9f82-b97d91b69a68")
 		)
 		(pin "2"
-			(uuid "ca3da496-b339-4afa-9df5-bfab677aaa90")
+			(uuid "ca3da496-b339-4afa-9df5-bfab677aaa91")
 		)
 		(instances
 			(project "PCB"
@@ -16593,7 +16593,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 191.4652 104.14 0)
 			(hide yes)
 			(show_name no)
