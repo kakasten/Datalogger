@@ -1,0 +1,84 @@
+ERC report (2026-08-06T20:55:22, Encoding UTF8)
+Report includes: Errors, Warnings
+
+***** Sheet /
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(114.30 mm, 110.49 mm): Symbol #PWR0161 Pin 1 [Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(142.24 mm, 110.49 mm): Symbol #PWR0162 Pin 1 [Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(185.42 mm, 104.14 mm): Symbol #PWR0147 Pin 1 [Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(209.55 mm, 110.49 mm): Symbol #PWR0146 Pin 1 [Power input, Line]
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(115.57 mm, 90.17 mm): Global Label 'SDA01_5V'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(115.57 mm, 92.71 mm): Global Label 'AN_SENS_01'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(115.57 mm, 95.25 mm): Global Label 'FIELD_INPUT_01'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(115.57 mm, 97.79 mm): Global Label 'FIELD_INPUT_02'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(115.57 mm, 100.33 mm): Global Label 'FIELD_INPUT_03'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(115.57 mm, 102.87 mm): Global Label 'FIELD_INPUT_04'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(115.57 mm, 105.41 mm): Global Label 'FIELD_INPUT_05'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(115.57 mm, 107.95 mm): Global Label 'FIELD_INPUT_06'
+[footprint_link_issues]: The current configuration does not include the footprint library ''
+    ; warning
+    @(116.84 mm, 90.17 mm): Symbol J3 [AMPSEAL_23]
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(140.97 mm, 90.17 mm): Global Label 'SCL01_5V'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(140.97 mm, 92.71 mm): Global Label 'AN_SENS_02'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(140.97 mm, 95.25 mm): Global Label 'AN_SENS_03'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(140.97 mm, 97.79 mm): Global Label 'AN_SENS_04'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(140.97 mm, 100.33 mm): Global Label 'AN_SENS_05'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(140.97 mm, 102.87 mm): Global Label 'AN_SENS_06'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(140.97 mm, 105.41 mm): Global Label 'AN_SENS_07'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(140.97 mm, 107.95 mm): Global Label 'AN_SENS_08'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(186.69 mm, 101.60 mm): Global Label 'CAN_H'
+[footprint_link_issues]: The current configuration does not include the footprint library ''
+    ; warning
+    @(187.96 mm, 101.60 mm): Symbol J2 [AMPSEAL_8]
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(209.55 mm, 101.60 mm): Global Label 'CAN_L'
+
+ ** ERC messages: 24  Errors 4  Warnings 20
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters

@@ -145,7 +145,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Datalogger Slave:STM32G431C8T6TR_SPLIT"
+		(symbol "Datalogger:STM32G431C8T6TR_SPLIT"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -5225,98 +5225,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 81.28 157.48 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "11803224-bd34-4d9e-beb4-8ad7c2880dc0")
-		(property "Reference" "D31"
-			(at 78.232 157.48 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 77.47 159.0675 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_01005_0402Metric"
-			(at 81.28 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 81.28 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 81.28 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 81.28 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a246a622-fafb-4be0-8e14-d097a4920d5c")
-		)
-		(pin "2"
-			(uuid "311de3fe-0e45-40d4-a99a-2e0c6f05d328")
-		)
-		(instances
-			(project "PCB"
-				(path "/53ac5407-c20a-483b-9c15-01b665bcfde4/22c8e3bc-69a1-4194-af70-892c91be28cf"
-					(reference "D31")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Datalogger Slave:STM32G431C8T6TR_SPLIT")
+		(lib_id "Datalogger:STM32G431C8T6TR_SPLIT")
 		(at 191.77 63.5 0)
 		(unit 1)
 		(body_style 1)
@@ -5326,8 +5235,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "1711a04c-edfd-4802-bdd1-2f290096fd64")
-		(property "Reference" "IC9"
+		(uuid "10ef9c4b-bb2c-4d0c-b7e0-124cc39cab7b")
+		(property "Reference" "IC13"
 			(at 203.2 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5442,160 +5351,245 @@
 				(justify left top)
 			)
 		)
-		(pin "24"
-			(uuid "735da88a-ec08-477b-a52d-0d4ce5a21bdc")
-		)
-		(pin "47"
-			(uuid "7eb9d816-3050-4012-866f-460a788f1072")
-		)
-		(pin "48"
-			(uuid "4d080e0a-a511-4290-a97e-73dcc186f09f")
-		)
-		(pin "45"
-			(uuid "fc930daf-4a4c-4252-99be-6e492ea400a6")
-		)
-		(pin "35"
-			(uuid "9701e0ad-d6e8-4a8f-9771-9690261dbac2")
+		(pin "27"
+			(uuid "4530aff7-4449-4973-afe4-2bdc974d25a8")
 		)
 		(pin "23"
-			(uuid "06ec5cd9-1ecf-482c-a05c-36c452e24e67")
-		)
-		(pin "36"
-			(uuid "26dae516-9141-4cee-9aac-bb223e796a80")
-		)
-		(pin "14"
-			(uuid "a08738a0-7c12-4f05-a14d-904070169aec")
-		)
-		(pin "18"
-			(uuid "fbec4a83-cec6-4f4f-a4d2-bda9736dacd1")
-		)
-		(pin "8"
-			(uuid "4467333d-d490-44d5-a08c-4e2f1c5d50f1")
-		)
-		(pin "10"
-			(uuid "f5abea21-51ff-482b-9939-9b750d2cfe67")
-		)
-		(pin "28"
-			(uuid "dbde4240-e8b8-4b1b-ac62-3a7f61853c1d")
-		)
-		(pin "27"
-			(uuid "3aab71f4-772c-4fad-ae7a-e19c2ef10042")
-		)
-		(pin "9"
-			(uuid "95a06e81-d191-427a-bae7-1284ba68d765")
-		)
-		(pin "2"
-			(uuid "cf235058-c4b4-4f3e-b37a-fe8601cd8e71")
+			(uuid "00b76514-42f7-4dc7-92c3-a447f92fd0c5")
 		)
 		(pin "11"
-			(uuid "b7dc5026-4e3f-48c3-8766-e05c2fd52a80")
-		)
-		(pin "12"
-			(uuid "3b9ff33d-44d0-4b22-a421-2a90c5180dfc")
-		)
-		(pin "4"
-			(uuid "770aad36-9c7c-43d0-acc8-58172efce620")
-		)
-		(pin "3"
-			(uuid "af0cde03-416f-4645-9fff-b2067b193463")
-		)
-		(pin "13"
-			(uuid "0ebde6cf-a3da-48a1-b694-ffda69c3db75")
-		)
-		(pin "15"
-			(uuid "5640b71d-c942-44f1-85e5-fa01ed9550fd")
-		)
-		(pin "17"
-			(uuid "623dbb5f-36bc-40f5-975d-0ec2ec4517e1")
-		)
-		(pin "16"
-			(uuid "de16a301-8daf-41b6-966f-491430ea5478")
-		)
-		(pin "22"
-			(uuid "39a9b2e4-01ba-4409-ae5b-05117336b198")
-		)
-		(pin "26"
-			(uuid "5d26cf1a-2b9d-4fae-a574-a0fabff71c79")
-		)
-		(pin "25"
-			(uuid "ed40b4f6-f3b5-4724-ad89-bea073e0137d")
-		)
-		(pin "38"
-			(uuid "0a251044-1aed-4eca-b9ac-947426a94d36")
-		)
-		(pin "39"
-			(uuid "378e5f5b-3c2f-4564-84eb-4907d58db89a")
-		)
-		(pin "42"
-			(uuid "e9788189-0375-4451-bfc7-d6171ac9bb7e")
-		)
-		(pin "30"
-			(uuid "d399129f-d3bf-4c11-be35-bc688319015c")
-		)
-		(pin "33"
-			(uuid "43f3b741-09c1-473d-ae62-8daa750a8548")
-		)
-		(pin "46"
-			(uuid "76e1bb9f-7273-42d2-8751-89552a22804b")
-		)
-		(pin "5"
-			(uuid "a4345fb1-7962-4b99-962d-b1f3e3e83987")
-		)
-		(pin "6"
-			(uuid "b4b0a5f1-c1a0-4eaa-9c10-e80f07e146b3")
-		)
-		(pin "7"
-			(uuid "3ca4202a-4379-467f-a77e-d9dea8700dd4")
-		)
-		(pin "19"
-			(uuid "03de21d2-b3e1-4e2c-ac81-fdfeddabc37e")
-		)
-		(pin "41"
-			(uuid "ec6b623d-3a17-4ea1-881b-8f6a80321134")
-		)
-		(pin "20"
-			(uuid "00b9b41a-57ae-46d8-8272-df08b11641df")
-		)
-		(pin "21"
-			(uuid "86fd3590-d954-45a4-9532-ae0e2a3654b8")
-		)
-		(pin "31"
-			(uuid "57011177-59b8-4405-90b1-cd971aefb57b")
+			(uuid "78ac764d-444d-47a3-bef3-3b78494d684a")
 		)
 		(pin "32"
-			(uuid "cef7c9c4-40cf-4d47-9f0d-21aef20659f8")
+			(uuid "c14897f4-ef3b-47dc-96fc-7eb978d9ca81")
 		)
-		(pin "34"
-			(uuid "689f17f3-192d-4bd9-a7d2-cdc41701f293")
+		(pin "48"
+			(uuid "be625d93-fbb3-44bf-a63b-5a2dff3bebd2")
 		)
-		(pin "29"
-			(uuid "db164fe0-4e0b-4b91-a1e3-b82ad44380f9")
+		(pin "10"
+			(uuid "ff82c3fc-cac2-41e4-b18c-e433457239e4")
+		)
+		(pin "3"
+			(uuid "9f2f7649-ebe2-4c31-9ea4-b723bd5b9d6f")
 		)
 		(pin "37"
-			(uuid "d888b3d3-6470-4681-8fcf-012b30bcc266")
+			(uuid "7f3905a2-b9d0-4876-a69f-4b3b898025e8")
 		)
-		(pin "40"
-			(uuid "a0b11f9c-f3d6-41ac-acf8-b8d0a5404a68")
+		(pin "12"
+			(uuid "a5ce8555-dd73-4722-8164-8bcb61c2bca0")
 		)
-		(pin "44"
-			(uuid "7b199d2c-e052-40ac-9949-67cb998ed26c")
+		(pin "33"
+			(uuid "b9661b2f-5eb8-4779-8a6a-9cb4ed7d4caf")
+		)
+		(pin "35"
+			(uuid "6af937ee-2944-4bd6-805d-e2fe3a3c2dae")
+		)
+		(pin "31"
+			(uuid "5501d408-adb7-4bb9-9419-ed78f25bff0a")
+		)
+		(pin "17"
+			(uuid "c40cb3cf-c8c6-4d2d-9a39-c2f2e32189e9")
+		)
+		(pin "46"
+			(uuid "617e71d5-557c-4603-84ea-4aa772373fe5")
+		)
+		(pin "30"
+			(uuid "254bd33f-4545-4e68-b1de-ba1b7d83be3e")
+		)
+		(pin "29"
+			(uuid "70285261-4d23-4c7c-b0f9-8590f925b7f4")
+		)
+		(pin "19"
+			(uuid "4f3b3ff0-de07-4aaf-9ce8-bc8f821d4f89")
+		)
+		(pin "6"
+			(uuid "55a23202-4af4-4f8d-ae85-3236524f75f6")
+		)
+		(pin "28"
+			(uuid "c40ef3d8-8a1f-4ac1-9e47-a4bdba034f18")
+		)
+		(pin "45"
+			(uuid "151ba780-1aa6-45ab-b880-dcf60b4fe1e7")
+		)
+		(pin "9"
+			(uuid "4bd0bed8-2b1e-4d9c-848c-5b339393fa5a")
+		)
+		(pin "4"
+			(uuid "5defcec0-713f-4351-a0f4-b50e45a9f781")
+		)
+		(pin "42"
+			(uuid "ef0c3c12-997e-4833-b51f-0d7821cb2143")
 		)
 		(pin "1"
-			(uuid "b4275a40-0e71-4091-879e-64fa6bc8193c")
+			(uuid "471337e3-c582-4cdd-b646-dd72b0b47e12")
+		)
+		(pin "40"
+			(uuid "387e7531-d90c-480c-9fc4-145ca5b4b964")
+		)
+		(pin "26"
+			(uuid "091bc456-7022-4ed9-bc25-f96b52f42bb3")
+		)
+		(pin "2"
+			(uuid "cbe05c2c-a4cc-4b40-a6cf-1b3c1cae191f")
 		)
 		(pin "43"
-			(uuid "a3682683-5ba8-4989-9e8b-4728ce31a5ae")
+			(uuid "4012def7-63ed-417e-b5cd-a2d594177602")
+		)
+		(pin "20"
+			(uuid "4370d097-7811-4482-8aaf-b394750ff068")
+		)
+		(pin "34"
+			(uuid "7cd1086d-00c5-4627-adbc-a12152e44618")
+		)
+		(pin "38"
+			(uuid "1238e8f6-91ba-4338-871f-25c90637f8ae")
+		)
+		(pin "16"
+			(uuid "c89ca464-5a79-4a56-91da-20f5f937dd32")
+		)
+		(pin "21"
+			(uuid "3b890393-22fe-4840-8294-d1139ace9217")
+		)
+		(pin "44"
+			(uuid "59cc9afa-9ae1-4b52-b9ac-1c602460dbd5")
+		)
+		(pin "25"
+			(uuid "2d038925-78eb-4d5c-9481-4cbd6143ec20")
+		)
+		(pin "14"
+			(uuid "89b61d79-3a9f-4d8f-8d05-9b57b5df4838")
+		)
+		(pin "24"
+			(uuid "a4f240f6-5e64-4181-9ce8-fbecb90b336d")
+		)
+		(pin "47"
+			(uuid "0008efcd-32a1-4415-95c5-c47b73070493")
+		)
+		(pin "13"
+			(uuid "a03f9b7c-c848-4e13-a4e0-5f306feba542")
+		)
+		(pin "41"
+			(uuid "7a2ff93a-e402-4b42-9cec-0483e7ebd3f3")
+		)
+		(pin "8"
+			(uuid "b6d37c0e-359e-4cfc-b768-fc410b461dae")
+		)
+		(pin "22"
+			(uuid "b5019a3e-74f8-415d-97d8-054c2986eef0")
+		)
+		(pin "7"
+			(uuid "057dbdb8-9add-4078-861f-20eb2b737bba")
+		)
+		(pin "36"
+			(uuid "c40dddef-2a96-4f22-9243-e58d77666f70")
+		)
+		(pin "5"
+			(uuid "c9297023-a8bb-4faf-96b9-f1578497f9b2")
+		)
+		(pin "39"
+			(uuid "2777f823-2908-4a87-92bc-e43409b7ab1c")
+		)
+		(pin "15"
+			(uuid "0b21a18a-dc07-4fa4-9d53-4352ebb662e2")
+		)
+		(pin "18"
+			(uuid "cfd3930f-2153-4d4e-9b17-d39dae3c7185")
 		)
 		(instances
 			(project "PCB"
 				(path "/53ac5407-c20a-483b-9c15-01b665bcfde4/22c8e3bc-69a1-4194-af70-892c91be28cf"
-					(reference "IC9")
+					(reference "IC13")
 					(unit 1)
 				)
 			)
-			(project "PBC"
-				(path "/a4ad737a-fe51-4cc1-a37b-f3be6bcfb177"
-					(reference "IC5")
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 81.28 157.48 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "11803224-bd34-4d9e-beb4-8ad7c2880dc0")
+		(property "Reference" "D31"
+			(at 78.232 157.48 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 77.47 159.0675 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_01005_0402Metric"
+			(at 81.28 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 81.28 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 81.28 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a246a622-fafb-4be0-8e14-d097a4920d5c")
+		)
+		(pin "2"
+			(uuid "311de3fe-0e45-40d4-a99a-2e0c6f05d328")
+		)
+		(instances
+			(project "PCB"
+				(path "/53ac5407-c20a-483b-9c15-01b665bcfde4/22c8e3bc-69a1-4194-af70-892c91be28cf"
+					(reference "D31")
 					(unit 1)
 				)
 			)
@@ -6861,6 +6855,286 @@
 				(path "/a4ad737a-fe51-4cc1-a37b-f3be6bcfb177"
 					(reference "C27")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Datalogger:STM32G431C8T6TR_SPLIT")
+		(at 100.33 57.15 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "728a79a9-086a-4600-b7e3-29617ce57651")
+		(property "Reference" "IC13"
+			(at 113.03 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STM32G431C8T6TR"
+			(at 113.03 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Datalogger:QFP50P900X900X160-48N"
+			(at 103.124 112.776 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32g431c6.pdf"
+			(at 103.378 116.078 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "Arm Cortex-M4 32-bit MCU+FPU, 170 MHz /213 DMIPS, up to 128 KB Flash, 32 KB SRAM, rich analog, math accelerator"
+			(at 100.33 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "1.6"
+			(at 142.24 436.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "511-STM32G431C8T6TR"
+			(at 142.24 536.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STM32G431C8T6TR?qs=GedFDFLaBXHEfUM8V9tv7Q%3D%3D"
+			(at 142.24 636.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "STMicroelectronics"
+			(at 142.24 736.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "STM32G431C8T6TR"
+			(at 142.24 836.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "27"
+			(uuid "4530aff7-4449-4973-afe4-2bdc974d25a8")
+		)
+		(pin "23"
+			(uuid "00b76514-42f7-4dc7-92c3-a447f92fd0c5")
+		)
+		(pin "11"
+			(uuid "78ac764d-444d-47a3-bef3-3b78494d684a")
+		)
+		(pin "32"
+			(uuid "c14897f4-ef3b-47dc-96fc-7eb978d9ca81")
+		)
+		(pin "48"
+			(uuid "be625d93-fbb3-44bf-a63b-5a2dff3bebd2")
+		)
+		(pin "10"
+			(uuid "ff82c3fc-cac2-41e4-b18c-e433457239e4")
+		)
+		(pin "3"
+			(uuid "9f2f7649-ebe2-4c31-9ea4-b723bd5b9d6f")
+		)
+		(pin "37"
+			(uuid "7f3905a2-b9d0-4876-a69f-4b3b898025e8")
+		)
+		(pin "12"
+			(uuid "a5ce8555-dd73-4722-8164-8bcb61c2bca0")
+		)
+		(pin "33"
+			(uuid "b9661b2f-5eb8-4779-8a6a-9cb4ed7d4caf")
+		)
+		(pin "35"
+			(uuid "6af937ee-2944-4bd6-805d-e2fe3a3c2dae")
+		)
+		(pin "31"
+			(uuid "5501d408-adb7-4bb9-9419-ed78f25bff0a")
+		)
+		(pin "17"
+			(uuid "c40cb3cf-c8c6-4d2d-9a39-c2f2e32189e9")
+		)
+		(pin "46"
+			(uuid "617e71d5-557c-4603-84ea-4aa772373fe5")
+		)
+		(pin "30"
+			(uuid "254bd33f-4545-4e68-b1de-ba1b7d83be3e")
+		)
+		(pin "29"
+			(uuid "70285261-4d23-4c7c-b0f9-8590f925b7f4")
+		)
+		(pin "19"
+			(uuid "4f3b3ff0-de07-4aaf-9ce8-bc8f821d4f89")
+		)
+		(pin "6"
+			(uuid "55a23202-4af4-4f8d-ae85-3236524f75f6")
+		)
+		(pin "28"
+			(uuid "c40ef3d8-8a1f-4ac1-9e47-a4bdba034f18")
+		)
+		(pin "45"
+			(uuid "151ba780-1aa6-45ab-b880-dcf60b4fe1e7")
+		)
+		(pin "9"
+			(uuid "4bd0bed8-2b1e-4d9c-848c-5b339393fa5a")
+		)
+		(pin "4"
+			(uuid "5defcec0-713f-4351-a0f4-b50e45a9f781")
+		)
+		(pin "42"
+			(uuid "ef0c3c12-997e-4833-b51f-0d7821cb2143")
+		)
+		(pin "1"
+			(uuid "471337e3-c582-4cdd-b646-dd72b0b47e12")
+		)
+		(pin "40"
+			(uuid "387e7531-d90c-480c-9fc4-145ca5b4b964")
+		)
+		(pin "26"
+			(uuid "091bc456-7022-4ed9-bc25-f96b52f42bb3")
+		)
+		(pin "2"
+			(uuid "cbe05c2c-a4cc-4b40-a6cf-1b3c1cae191f")
+		)
+		(pin "43"
+			(uuid "4012def7-63ed-417e-b5cd-a2d594177602")
+		)
+		(pin "20"
+			(uuid "4370d097-7811-4482-8aaf-b394750ff068")
+		)
+		(pin "34"
+			(uuid "7cd1086d-00c5-4627-adbc-a12152e44618")
+		)
+		(pin "38"
+			(uuid "1238e8f6-91ba-4338-871f-25c90637f8ae")
+		)
+		(pin "16"
+			(uuid "c89ca464-5a79-4a56-91da-20f5f937dd32")
+		)
+		(pin "21"
+			(uuid "3b890393-22fe-4840-8294-d1139ace9217")
+		)
+		(pin "44"
+			(uuid "59cc9afa-9ae1-4b52-b9ac-1c602460dbd5")
+		)
+		(pin "25"
+			(uuid "2d038925-78eb-4d5c-9481-4cbd6143ec20")
+		)
+		(pin "14"
+			(uuid "89b61d79-3a9f-4d8f-8d05-9b57b5df4838")
+		)
+		(pin "24"
+			(uuid "a4f240f6-5e64-4181-9ce8-fbecb90b336d")
+		)
+		(pin "47"
+			(uuid "0008efcd-32a1-4415-95c5-c47b73070493")
+		)
+		(pin "13"
+			(uuid "a03f9b7c-c848-4e13-a4e0-5f306feba542")
+		)
+		(pin "41"
+			(uuid "7a2ff93a-e402-4b42-9cec-0483e7ebd3f3")
+		)
+		(pin "8"
+			(uuid "b6d37c0e-359e-4cfc-b768-fc410b461dae")
+		)
+		(pin "22"
+			(uuid "b5019a3e-74f8-415d-97d8-054c2986eef0")
+		)
+		(pin "7"
+			(uuid "057dbdb8-9add-4078-861f-20eb2b737bba")
+		)
+		(pin "36"
+			(uuid "c40dddef-2a96-4f22-9243-e58d77666f70")
+		)
+		(pin "5"
+			(uuid "c9297023-a8bb-4faf-96b9-f1578497f9b2")
+		)
+		(pin "39"
+			(uuid "2777f823-2908-4a87-92bc-e43409b7ab1c")
+		)
+		(pin "15"
+			(uuid "0b21a18a-dc07-4fa4-9d53-4352ebb662e2")
+		)
+		(pin "18"
+			(uuid "cfd3930f-2153-4d4e-9b17-d39dae3c7185")
+		)
+		(instances
+			(project "PCB"
+				(path "/53ac5407-c20a-483b-9c15-01b665bcfde4/22c8e3bc-69a1-4194-af70-892c91be28cf"
+					(reference "IC13")
+					(unit 2)
 				)
 			)
 		)
@@ -9399,292 +9673,6 @@
 				(path "/a4ad737a-fe51-4cc1-a37b-f3be6bcfb177"
 					(reference "Y1")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Datalogger Slave:STM32G431C8T6TR_SPLIT")
-		(at 100.33 57.15 0)
-		(unit 2)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e561f95f-4dd5-4db7-867c-9d6560ec2fc4")
-		(property "Reference" "IC9"
-			(at 113.03 52.07 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "STM32G431C8T6TR"
-			(at 113.03 54.61 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Datalogger:QFP50P900X900X160-48N"
-			(at 103.124 112.776 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32g431c6.pdf"
-			(at 103.378 116.078 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "Arm Cortex-M4 32-bit MCU+FPU, 170 MHz /213 DMIPS, up to 128 KB Flash, 32 KB SRAM, rich analog, math accelerator"
-			(at 100.33 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "1.6"
-			(at 142.24 436.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "511-STM32G431C8T6TR"
-			(at 142.24 536.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STM32G431C8T6TR?qs=GedFDFLaBXHEfUM8V9tv7Q%3D%3D"
-			(at 142.24 636.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "STMicroelectronics"
-			(at 142.24 736.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "STM32G431C8T6TR"
-			(at 142.24 836.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "24"
-			(uuid "564d0890-42c0-40aa-9b9f-4947a707b8d7")
-		)
-		(pin "47"
-			(uuid "481f0aa3-59dc-4770-8c24-4d44cd580dac")
-		)
-		(pin "48"
-			(uuid "cc37a4b2-fa99-45e6-bca3-dc8581acee7d")
-		)
-		(pin "45"
-			(uuid "07ecde84-9462-461d-9280-c2fd9421a45f")
-		)
-		(pin "35"
-			(uuid "f7aa7d72-3b18-47e5-89d1-016d1f46230e")
-		)
-		(pin "23"
-			(uuid "7a4c884c-35d3-4f61-a7aa-62c2104824cc")
-		)
-		(pin "36"
-			(uuid "74199136-7c04-4925-a34f-125e700f4a5d")
-		)
-		(pin "14"
-			(uuid "25018640-4314-4358-9362-e77400cabfe4")
-		)
-		(pin "18"
-			(uuid "eee07a44-a9dd-44b4-ad2d-265f70f48d49")
-		)
-		(pin "8"
-			(uuid "0442868c-4ea2-4a94-ab47-520e195bf0df")
-		)
-		(pin "10"
-			(uuid "2331a107-ed5c-42eb-adeb-5e64e8e3e517")
-		)
-		(pin "28"
-			(uuid "af9da0c1-ab65-42b6-8221-26dc3ba82ee8")
-		)
-		(pin "27"
-			(uuid "72168ea3-2e94-4afe-be0b-2818dd5647c4")
-		)
-		(pin "9"
-			(uuid "87df8b58-96e0-412e-b600-506fa06e2415")
-		)
-		(pin "2"
-			(uuid "00064ea6-b1de-4945-a54a-c56556739e7d")
-		)
-		(pin "11"
-			(uuid "0a56120a-18ee-484e-ab8a-993e14ac04b0")
-		)
-		(pin "12"
-			(uuid "44526f94-2e6f-4ecf-b281-592eddd71f3a")
-		)
-		(pin "4"
-			(uuid "91e7fc51-239a-488a-9f3c-170962bfb7b6")
-		)
-		(pin "3"
-			(uuid "64adb701-f3a0-4f20-abe4-5280561dca25")
-		)
-		(pin "13"
-			(uuid "3f837c77-6d91-4052-808c-378818aecbb3")
-		)
-		(pin "15"
-			(uuid "4e80fda2-a027-4361-9f88-f3585fe87a5b")
-		)
-		(pin "17"
-			(uuid "3ae8e6b2-e652-43e5-b48f-f8c12c27a63e")
-		)
-		(pin "16"
-			(uuid "ce036248-1f08-42c6-8a07-c8c09912b0c3")
-		)
-		(pin "22"
-			(uuid "2d7fc0ea-979a-4138-9ebf-d7871d12f91d")
-		)
-		(pin "26"
-			(uuid "531d8b97-a5a0-4657-bb90-54ed1ba01c7b")
-		)
-		(pin "25"
-			(uuid "1a9cba0a-c577-424a-b520-40800a9d07ed")
-		)
-		(pin "38"
-			(uuid "fa412d24-f13e-4ba4-8d72-38791f7a0ea4")
-		)
-		(pin "39"
-			(uuid "c731fff1-72f4-46b9-a2aa-a5218c309286")
-		)
-		(pin "42"
-			(uuid "34c3801c-3c6d-4f07-a5e2-3a911914174f")
-		)
-		(pin "30"
-			(uuid "083eec55-ed4c-403b-8398-28f78f098480")
-		)
-		(pin "33"
-			(uuid "5cdcc24a-d52b-4409-b15c-2ad6d76569ee")
-		)
-		(pin "46"
-			(uuid "3c1374ef-5a47-40df-a90c-34642ad182af")
-		)
-		(pin "5"
-			(uuid "71ebdc94-ecb4-4d9b-b8cd-68d67826c94c")
-		)
-		(pin "6"
-			(uuid "230a12ff-1c71-4f66-9bc6-76299eb449d8")
-		)
-		(pin "7"
-			(uuid "94d08675-d887-42a4-89a7-85bb3dabe3c9")
-		)
-		(pin "19"
-			(uuid "32d38053-a8c6-4075-9595-2c049a6b92d2")
-		)
-		(pin "41"
-			(uuid "e5948c04-c21b-4373-bb8e-d7fa44fcb7a6")
-		)
-		(pin "20"
-			(uuid "ed59cf04-640c-41fc-807f-28b71cb35fd8")
-		)
-		(pin "21"
-			(uuid "17e162a7-f173-4d6c-b98d-8aa5d9e69e11")
-		)
-		(pin "31"
-			(uuid "e566ebff-5bf1-4928-bd1b-3a71d56db632")
-		)
-		(pin "32"
-			(uuid "b73fc896-7ea5-4a25-a3ed-042321b73c73")
-		)
-		(pin "34"
-			(uuid "2cee7330-26b5-4793-b8c9-937d569097ff")
-		)
-		(pin "29"
-			(uuid "d9f5bca4-14ab-4a70-af93-62434289869a")
-		)
-		(pin "37"
-			(uuid "c1a996b2-7181-473a-8e65-d31e85d0a523")
-		)
-		(pin "40"
-			(uuid "45065a87-2668-412a-b8e7-a1d29b2a309d")
-		)
-		(pin "44"
-			(uuid "1111cbb4-1c66-46b9-a5ec-696cacb82e78")
-		)
-		(pin "1"
-			(uuid "ad92d64a-d3d0-4d5d-a51d-763bf61bdf4e")
-		)
-		(pin "43"
-			(uuid "a9c0754c-fe54-4837-b82b-5f679867faa5")
-		)
-		(instances
-			(project "PCB"
-				(path "/53ac5407-c20a-483b-9c15-01b665bcfde4/22c8e3bc-69a1-4194-af70-892c91be28cf"
-					(reference "IC9")
-					(unit 2)
-				)
-			)
-			(project "PBC"
-				(path "/a4ad737a-fe51-4cc1-a37b-f3be6bcfb177"
-					(reference "IC5")
-					(unit 2)
 				)
 			)
 		)

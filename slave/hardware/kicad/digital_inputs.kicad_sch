@@ -3314,7 +3314,7 @@
 			)
 		)
 	)
-	(global_label "MCU_HS_02"
+	(global_label "MCU_LS_02"
 		(shape input)
 		(at 236.22 92.71 0)
 		(fields_autoplaced yes)
@@ -3326,7 +3326,7 @@
 		)
 		(uuid "cce0ccfc-d5b9-4303-823e-8beb0e98248b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 250.1513 92.71 0)
+			(at 249.8489 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

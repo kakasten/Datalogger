@@ -147,7 +147,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Datalogger Slave:L6982CDR"
+		(symbol "Datalogger:L6982CDR"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -429,7 +429,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Datalogger Slave:STEF12SGR"
+		(symbol "Datalogger:STEF12SGR"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -5434,171 +5434,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Datalogger Slave:STEF12SGR")
-		(at 186.69 54.61 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0f8d21ec-1180-4f5a-85d9-880f15afe918")
-		(property "Reference" "IC3"
-			(at 193.548 48.768 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "STEF12SGR"
-			(at 197.104 50.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Datalogger:SOIC127P600X175-8N"
-			(at 220.98 149.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stef12s.pdf"
-			(at 220.98 249.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "Electronic fuse for 12 V line"
-			(at 186.69 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "1"
-			(at 220.98 449.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "511-STEF12SGR"
-			(at 220.98 549.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STEF12SGR?qs=%252B6g0mu59x7KS%2FtDmSY%252Bjug%3D%3D"
-			(at 220.98 649.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "STMicroelectronics"
-			(at 220.98 749.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "STEF12SGR"
-			(at 220.98 849.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "3"
-			(uuid "76084630-5bba-4fec-a3c7-7aed874a7bf4")
-		)
-		(pin "5"
-			(uuid "097d5007-5e89-49a7-bef9-6ff4156de1eb")
-		)
-		(pin "8"
-			(uuid "70a92448-025f-4904-a15d-ef65e49ad254")
-		)
-		(pin "6"
-			(uuid "161aae1a-f7d0-48d6-b566-af56b10488c8")
-		)
-		(pin "4"
-			(uuid "c1a75254-0ef9-4b07-96e2-62845ef0aaff")
-		)
-		(pin "1"
-			(uuid "75e534c5-8eb1-4f4e-82f1-526bc39ef77c")
-		)
-		(pin "7"
-			(uuid "c0e3bc2f-7774-40d7-9917-5eeb82782b57")
-		)
-		(pin "2"
-			(uuid "28807c78-baac-4554-93d9-f958351dea0a")
-		)
-		(instances
-			(project "PCB"
-				(path "/53ac5407-c20a-483b-9c15-01b665bcfde4/97abdd3d-cac1-452d-8213-3d07857d1f7c"
-					(reference "IC3")
-					(unit 1)
-				)
-			)
-			(project "PBC"
-				(path "/cce355a1-a612-4778-b401-96e9051be68c/7da40af2-5ba5-45c4-8e97-4bd5ef41d1e2"
-					(reference "IC3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 82.55 135.89 0)
 		(unit 1)
@@ -5703,6 +5538,166 @@
 			(project "PBC"
 				(path "/cce355a1-a612-4778-b401-96e9051be68c/7da40af2-5ba5-45c4-8e97-4bd5ef41d1e2"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Datalogger:L6982CDR")
+		(at 118.11 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1019cafa-c2ac-4da4-8aef-d971d668cb00")
+		(property "Reference" "IC1"
+			(at 133.35 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "L6982C50"
+			(at 133.35 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Datalogger:SOIC127P600X175-8N"
+			(at 152.4 146.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/l6982.pdf"
+			(at 152.4 246.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "Switching Voltage Regulators 38 V, 1.5 A synchronous step-down converter with low quiescent current"
+			(at 118.11 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "1.75"
+			(at 152.4 446.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "511-L6982CDR"
+			(at 152.4 546.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/L6982CDR?qs=iLbezkQI%252BshBFBfP0eZlng%3D%3D"
+			(at 152.4 646.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "STMicroelectronics"
+			(at 152.4 746.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "L6982CDR"
+			(at 152.4 846.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "5"
+			(uuid "511d3379-6cc7-4861-a099-6281a9f12a5a")
+		)
+		(pin "6"
+			(uuid "62fcf69b-36ef-4c01-9d50-dd0f9731855d")
+		)
+		(pin "8"
+			(uuid "7361dd96-799e-4c11-8582-7f3bc446a504")
+		)
+		(pin "1"
+			(uuid "987b8222-1c2b-4f07-988a-93d6773c755d")
+		)
+		(pin "3"
+			(uuid "4a4e3fd7-5f34-4b0f-8883-9c64274d0bef")
+		)
+		(pin "4"
+			(uuid "202b605f-3b12-43a4-97d0-afbb6ad5f052")
+		)
+		(pin "2"
+			(uuid "c0374092-31b3-4071-9211-92946f778901")
+		)
+		(pin "7"
+			(uuid "95c44a9e-60ec-4103-a118-139cd8c60b94")
+		)
+		(instances
+			(project "PCB"
+				(path "/53ac5407-c20a-483b-9c15-01b665bcfde4/97abdd3d-cac1-452d-8213-3d07857d1f7c"
+					(reference "IC1")
 					(unit 1)
 				)
 			)
@@ -6489,6 +6484,324 @@
 		)
 	)
 	(symbol
+		(lib_id "Datalogger:STEF12SGR")
+		(at 186.69 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "20b27374-a0fc-4cf8-8b2a-d36b6fece9ee")
+		(property "Reference" "IC3"
+			(at 194.31 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STEF12SGR"
+			(at 202.565 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Datalogger:SOP65P280X100-8N"
+			(at 220.98 149.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stef12s.pdf"
+			(at 220.98 249.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "Electronic fuse for 12 V line"
+			(at 186.69 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "1"
+			(at 220.98 449.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "511-STEF12SGR"
+			(at 220.98 549.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STEF12SGR?qs=%252B6g0mu59x7KS%2FtDmSY%252Bjug%3D%3D"
+			(at 220.98 649.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "STMicroelectronics"
+			(at 220.98 749.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "STEF12SGR"
+			(at 220.98 849.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "6"
+			(uuid "30e8ecbf-a917-4bed-8393-e7f239f5d263")
+		)
+		(pin "7"
+			(uuid "0e3982dd-8374-41b8-ae40-fe6a6ff8b1b1")
+		)
+		(pin "8"
+			(uuid "dd399d3a-a573-4766-b723-d001e3b4b5bf")
+		)
+		(pin "1"
+			(uuid "dc0e0261-115c-4a10-9cce-4511c54e1549")
+		)
+		(pin "2"
+			(uuid "b6f7bc9f-6aae-41d0-9301-920c472bdbf3")
+		)
+		(pin "3"
+			(uuid "33b2c186-60a4-44af-bb94-89d0bdce49bb")
+		)
+		(pin "4"
+			(uuid "579743b2-e94d-40f8-8d59-ef42fee54ac6")
+		)
+		(pin "5"
+			(uuid "77421e31-8c3b-417e-81e9-6e9d198867e7")
+		)
+		(instances
+			(project "PCB"
+				(path "/53ac5407-c20a-483b-9c15-01b665bcfde4/97abdd3d-cac1-452d-8213-3d07857d1f7c"
+					(reference "IC3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Datalogger:STEF12SGR")
+		(at 186.69 96.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "24d00f98-aa9c-43de-aa7d-74277e7255c2")
+		(property "Reference" "IC4"
+			(at 194.31 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STEF12SGR"
+			(at 202.565 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Datalogger:SOP65P280X100-8N"
+			(at 220.98 191.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stef12s.pdf"
+			(at 220.98 291.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "Electronic fuse for 12 V line"
+			(at 186.69 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "1"
+			(at 220.98 491.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "511-STEF12SGR"
+			(at 220.98 591.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STEF12SGR?qs=%252B6g0mu59x7KS%2FtDmSY%252Bjug%3D%3D"
+			(at 220.98 691.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "STMicroelectronics"
+			(at 220.98 791.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "STEF12SGR"
+			(at 220.98 891.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "8"
+			(uuid "28aa6076-6a78-4d54-a6c6-59ed2a5a8913")
+		)
+		(pin "1"
+			(uuid "2b9e18ac-66f0-4c19-a71b-f2fa99c7700d")
+		)
+		(pin "3"
+			(uuid "5ea84ba7-ce59-4820-9c78-a981a1be46a9")
+		)
+		(pin "2"
+			(uuid "0b9abcfa-f76f-4e01-8b6a-44d83fd14797")
+		)
+		(pin "4"
+			(uuid "a508d685-b756-4ebe-b511-3fa66c77fb48")
+		)
+		(pin "5"
+			(uuid "1f3d7266-a693-4994-abd1-8ec3e2c01622")
+		)
+		(pin "7"
+			(uuid "d5ec2edb-f540-413f-92df-72754d767402")
+		)
+		(pin "6"
+			(uuid "c9c4df3c-37be-4f5b-97d0-d9102beb1a81")
+		)
+		(instances
+			(project "PCB"
+				(path "/53ac5407-c20a-483b-9c15-01b665bcfde4/97abdd3d-cac1-452d-8213-3d07857d1f7c"
+					(reference "IC4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDREF")
 		(at 69.85 62.23 0)
 		(unit 1)
@@ -6950,171 +7263,6 @@
 			(project "PCB"
 				(path "/53ac5407-c20a-483b-9c15-01b665bcfde4/97abdd3d-cac1-452d-8213-3d07857d1f7c"
 					(reference "#FLG02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Datalogger Slave:L6982CDR")
-		(at 118.11 52.07 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "38fa9b72-a97c-4d93-abbc-0d8fbec58d4c")
-		(property "Reference" "IC1"
-			(at 124.714 46.228 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "L6982C50"
-			(at 128.016 48.26 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Datalogger:SOIC127P600X175-8N"
-			(at 152.4 146.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/l6982.pdf"
-			(at 152.4 246.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "Switching Voltage Regulators 38 V, 1.5 A synchronous step-down converter with low quiescent current"
-			(at 118.11 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "1.75"
-			(at 152.4 446.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "511-L6982CDR"
-			(at 152.4 546.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/L6982CDR?qs=iLbezkQI%252BshBFBfP0eZlng%3D%3D"
-			(at 152.4 646.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "STMicroelectronics"
-			(at 152.4 746.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "L6982CDR"
-			(at 152.4 846.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "5"
-			(uuid "794ba3cd-577f-4596-a1db-fd7c7b81913a")
-		)
-		(pin "2"
-			(uuid "7e09b8ee-f1df-4b15-ac1f-ac06c77b42d0")
-		)
-		(pin "1"
-			(uuid "e1dec858-26b3-4c59-81e0-4d6da34b05c8")
-		)
-		(pin "3"
-			(uuid "beaf201e-51fe-4c3b-80d4-131973140387")
-		)
-		(pin "4"
-			(uuid "8558d742-37e2-472c-ba55-3f2cc391df74")
-		)
-		(pin "7"
-			(uuid "91264540-8df2-4f2e-9e4d-aa9e63b7c6c5")
-		)
-		(pin "6"
-			(uuid "a1539a4a-257c-4d3f-9107-5298fc7aa524")
-		)
-		(pin "8"
-			(uuid "17e33aa9-1dd3-4302-b181-8083092269b5")
-		)
-		(instances
-			(project "PCB"
-				(path "/53ac5407-c20a-483b-9c15-01b665bcfde4/97abdd3d-cac1-452d-8213-3d07857d1f7c"
-					(reference "IC1")
-					(unit 1)
-				)
-			)
-			(project "PBC"
-				(path "/cce355a1-a612-4778-b401-96e9051be68c/7da40af2-5ba5-45c4-8e97-4bd5ef41d1e2"
-					(reference "IC1")
 					(unit 1)
 				)
 			)
@@ -8569,171 +8717,6 @@
 			(project "PBC"
 				(path "/cce355a1-a612-4778-b401-96e9051be68c/7da40af2-5ba5-45c4-8e97-4bd5ef41d1e2"
 					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Datalogger Slave:L6982CDR")
-		(at 118.11 93.98 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5ca928bd-31f3-4599-a1f5-8fa71c82dc48")
-		(property "Reference" "IC2"
-			(at 124.714 88.138 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "L6982C33"
-			(at 128.016 90.17 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Datalogger:SOIC127P600X175-8N"
-			(at 152.4 188.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/l6982.pdf"
-			(at 152.4 288.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "Switching Voltage Regulators 38 V, 1.5 A synchronous step-down converter with low quiescent current"
-			(at 118.11 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "1.75"
-			(at 152.4 488.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "511-L6982CDR"
-			(at 152.4 588.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/L6982CDR?qs=iLbezkQI%252BshBFBfP0eZlng%3D%3D"
-			(at 152.4 688.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "STMicroelectronics"
-			(at 152.4 788.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "L6982CDR"
-			(at 152.4 888.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "5"
-			(uuid "0486c9c6-1de2-488e-b28e-1fc179a8405e")
-		)
-		(pin "2"
-			(uuid "7229cf21-5d41-4d28-a8c3-1069bfd3a137")
-		)
-		(pin "1"
-			(uuid "af730394-59b3-4d55-863c-4767e2fb71eb")
-		)
-		(pin "3"
-			(uuid "f0394921-785a-46b6-8419-e25dbdf40f4f")
-		)
-		(pin "4"
-			(uuid "492aa497-adef-4470-b0b8-74c8c22a66f1")
-		)
-		(pin "7"
-			(uuid "1e82682a-90e7-4c8a-9a1f-94d949b69319")
-		)
-		(pin "6"
-			(uuid "748efda2-f9a1-41c7-a7e7-6dbe255c8555")
-		)
-		(pin "8"
-			(uuid "55204133-8832-4ad2-8547-d8b6e8740398")
-		)
-		(instances
-			(project "PCB"
-				(path "/53ac5407-c20a-483b-9c15-01b665bcfde4/97abdd3d-cac1-452d-8213-3d07857d1f7c"
-					(reference "IC2")
-					(unit 1)
-				)
-			)
-			(project "PBC"
-				(path "/cce355a1-a612-4778-b401-96e9051be68c/7da40af2-5ba5-45c4-8e97-4bd5ef41d1e2"
-					(reference "IC2")
 					(unit 1)
 				)
 			)
@@ -12122,6 +12105,166 @@
 		)
 	)
 	(symbol
+		(lib_id "Datalogger:L6982CDR")
+		(at 118.11 93.98 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cf19aab2-7858-4428-acf6-c30621305554")
+		(property "Reference" "IC2"
+			(at 133.35 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "L6982C33"
+			(at 133.35 88.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Datalogger:SOIC127P600X175-8N"
+			(at 152.4 188.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/l6982.pdf"
+			(at 152.4 288.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "Switching Voltage Regulators 38 V, 1.5 A synchronous step-down converter with low quiescent current"
+			(at 118.11 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "1.75"
+			(at 152.4 488.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "511-L6982CDR"
+			(at 152.4 588.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/L6982CDR?qs=iLbezkQI%252BshBFBfP0eZlng%3D%3D"
+			(at 152.4 688.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "STMicroelectronics"
+			(at 152.4 788.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "L6982CDR"
+			(at 152.4 888.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "7"
+			(uuid "56de8d0a-b486-40d0-8e35-b54179cc23f3")
+		)
+		(pin "6"
+			(uuid "dcf69077-b300-40b2-a7a7-4680ecd95728")
+		)
+		(pin "5"
+			(uuid "8d3d8987-ee4f-4c2e-91ee-39ea79734aa2")
+		)
+		(pin "4"
+			(uuid "8ba68965-afcf-4af8-a94f-4539d127e48a")
+		)
+		(pin "3"
+			(uuid "0bf1f750-d9ba-46a2-a07a-20648e0c1c14")
+		)
+		(pin "2"
+			(uuid "bc7dc489-a0e7-4a69-a52b-8ba8c81ba760")
+		)
+		(pin "1"
+			(uuid "e93817d5-0c25-4bcc-8691-4cd283463c8b")
+		)
+		(pin "8"
+			(uuid "2cf23202-7fb2-4d30-b729-2fe990f7b3e1")
+		)
+		(instances
+			(project "PCB"
+				(path "/53ac5407-c20a-483b-9c15-01b665bcfde4/97abdd3d-cac1-452d-8213-3d07857d1f7c"
+					(reference "IC2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 80.01 99.06 0)
 		(unit 1)
@@ -13134,171 +13277,6 @@
 			(project "PBC"
 				(path "/cce355a1-a612-4778-b401-96e9051be68c/7da40af2-5ba5-45c4-8e97-4bd5ef41d1e2"
 					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Datalogger Slave:STEF12SGR")
-		(at 186.69 96.52 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "fb8fd504-5f97-42de-ac05-5abefc0979e9")
-		(property "Reference" "IC4"
-			(at 193.548 90.678 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "STEF12SGR"
-			(at 197.104 92.71 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Datalogger:SOIC127P600X175-8N"
-			(at 220.98 191.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stef12s.pdf"
-			(at 220.98 291.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "Electronic fuse for 12 V line"
-			(at 186.69 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "1"
-			(at 220.98 491.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "511-STEF12SGR"
-			(at 220.98 591.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STEF12SGR?qs=%252B6g0mu59x7KS%2FtDmSY%252Bjug%3D%3D"
-			(at 220.98 691.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "STMicroelectronics"
-			(at 220.98 791.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "STEF12SGR"
-			(at 220.98 891.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "3"
-			(uuid "7c083549-8855-428f-8e09-1efe0ef5b02d")
-		)
-		(pin "5"
-			(uuid "f83f597c-1962-40f4-aafd-7e9284cbf92b")
-		)
-		(pin "8"
-			(uuid "b9ecf787-c2b4-46b1-98d6-28d1ada8a564")
-		)
-		(pin "6"
-			(uuid "fee9b4f4-df3c-4941-b6fa-cfc466862385")
-		)
-		(pin "4"
-			(uuid "7fe7d2ef-1861-4e4e-b00c-f3cc5a911a9a")
-		)
-		(pin "1"
-			(uuid "3ae594d0-af37-4ffd-b4f2-ab11d760871d")
-		)
-		(pin "7"
-			(uuid "2e8d2995-649a-4096-94bd-e1e3d95ab40d")
-		)
-		(pin "2"
-			(uuid "eddfdc80-bec0-4473-bb65-1464ad1108f7")
-		)
-		(instances
-			(project "PCB"
-				(path "/53ac5407-c20a-483b-9c15-01b665bcfde4/97abdd3d-cac1-452d-8213-3d07857d1f7c"
-					(reference "IC4")
-					(unit 1)
-				)
-			)
-			(project "PBC"
-				(path "/cce355a1-a612-4778-b401-96e9051be68c/7da40af2-5ba5-45c4-8e97-4bd5ef41d1e2"
-					(reference "IC4")
 					(unit 1)
 				)
 			)

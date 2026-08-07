@@ -2547,9 +2547,8 @@
 				)
 			)
 		)
-		(property "Footprint" "17762791"
+		(property "Footprint" "Datalogger:17762791"
 			(at 204.47 196.52 0)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3098,9 +3097,8 @@
 				)
 			)
 		)
-		(property "Footprint" "24890081"
+		(property "Footprint" "Datalogger:24890081"
 			(at 135.89 185.09 0)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
