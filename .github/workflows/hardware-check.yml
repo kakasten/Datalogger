@@ -25,20 +25,22 @@ jobs:
         run: |
           kicad-cli --version
 
-      - name: Run ERC on all schematics
+      - name: Run ERC on KiCad projects
         run: |
           error=0
 
-          find . -name "*.kicad_sch" ! -path "*backup*" ! -path "*/.history/*" > schematics.txt
+          find . -name "*.kicad_pro" ! -path "*backup*" ! -path "*/.history/*" > projects.txt
 
-          while read file; do
-            echo "Running ERC on $file"
+          while read project; do
+            schematic="${project%.kicad_pro}.kicad_sch"
 
-            if ! kicad-cli sch erc "$file" --exit-code-violations; then
+            echo "Running ERC on $schematic"
+
+            if ! kicad-cli sch erc "$schematic" --exit-code-violations; then
               error=1
             fi
 
-          done < schematics.txt
+          done < projects.txt
 
           exit $error
 
