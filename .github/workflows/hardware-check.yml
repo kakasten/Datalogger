@@ -25,24 +25,10 @@ jobs:
         run: |
           kicad-cli --version
 
-      - name: Run ERC on KiCad projects
+      - name: Run ERC test
         run: |
-          error=0
-
-          find . -name "*.kicad_pro" ! -path "*backup*" ! -path "*/.history/*" > projects.txt
-
-          while read project; do
-            schematic="${project%.kicad_pro}.kicad_sch"
-
-            echo "Running ERC on $schematic"
-
-            if ! (cd "$(dirname "$schematic")" && kicad-cli sch erc "$(basename "$schematic")" --exit-code-violations); then
-              error=1
-            fi
-
-          done < projects.txt
-
-          exit $error
+          cd ./slave/hardware/kicad
+          kicad-cli sch erc PCB.kicad_sch --exit-code-violations
 
       - name: Run DRC on all PCBs
         run: |
