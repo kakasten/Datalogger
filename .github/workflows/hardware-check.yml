@@ -29,6 +29,8 @@ jobs:
         run: |
           error=0
 
+          find . -name "*.kicad_sch" ! -path "*backup*" ! -path "*/.history/*" > schematics.txt
+
           while read file; do
             echo "Running ERC on $file"
 
@@ -36,13 +38,15 @@ jobs:
               error=1
             fi
 
-          done < <(find . -name "*.kicad_sch" ! -path "*backup*" ! -path "*/.history/*")
+          done < schematics.txt
 
           exit $error
 
       - name: Run DRC on all PCBs
         run: |
           error=0
+
+          find . -name "*.kicad_pcb" ! -path "*backup*" ! -path "*/.history/*" > pcbs.txt
 
           while read file; do
             echo "Running DRC on $file"
@@ -51,6 +55,6 @@ jobs:
               error=1
             fi
 
-          done < <(find . -name "*.kicad_pcb" ! -path "*backup*" ! -path "*/.history/*")
+          done < pcbs.txt
 
           exit $error
