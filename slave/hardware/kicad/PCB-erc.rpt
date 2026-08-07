@@ -1,70 +1,7 @@
-ERC report (2026-08-06T21:04:38, Encoding UTF8)
+ERC report (2026-08-06T21:24:26, Encoding UTF8)
 Report includes: Errors, Warnings
 
 ***** Sheet /
-[footprint_link_issues]: The current configuration does not include the footprint library ''
-    ; warning
-    @(116.84 mm, 90.17 mm): Symbol J3 [AMPSEAL_23]
-[footprint_link_issues]: The current configuration does not include the footprint library ''
-    ; warning
-    @(187.96 mm, 101.60 mm): Symbol J2 [AMPSEAL_8]
-[lib_symbol_issues]: The current configuration does not include the symbol library 'Datalogger Slave'
-    ; warning
-    @(137.16 mm, 95.25 mm): Symbol IC5 [TSV772IST]
-[lib_symbol_issues]: The current configuration does not include the symbol library 'Datalogger Slave'
-    ; warning
-    @(137.16 mm, 130.81 mm): Symbol IC5 [TSV772IST]
-[lib_symbol_issues]: The current configuration does not include the symbol library 'Datalogger Slave'
-    ; warning
-    @(137.16 mm, 171.45 mm): Symbol IC6 [TSV772IST]
-[lib_symbol_issues]: The current configuration does not include the symbol library 'Datalogger Slave'
-    ; warning
-    @(137.16 mm, 207.01 mm): Symbol IC6 [TSV772IST]
-[lib_symbol_issues]: The current configuration does not include the symbol library 'Datalogger Slave'
-    ; warning
-    @(260.35 mm, 95.25 mm): Symbol IC7 [TSV772IST]
-[lib_symbol_issues]: The current configuration does not include the symbol library 'Datalogger Slave'
-    ; warning
-    @(260.35 mm, 130.81 mm): Symbol IC7 [TSV772IST]
-[lib_symbol_issues]: The current configuration does not include the symbol library 'Datalogger Slave'
-    ; warning
-    @(260.35 mm, 171.45 mm): Symbol IC8 [TSV772IST]
-[lib_symbol_issues]: The current configuration does not include the symbol library 'Datalogger Slave'
-    ; warning
-    @(260.35 mm, 207.01 mm): Symbol IC8 [TSV772IST]
-[unconnected_wire_endpoint]: Unconnected wire endpoint
-    ; warning
-    @(303.53 mm, 196.85 mm): Vertical Wire, length 0.05 mm
-[endpoint_off_grid]: Symbol pin or wire end off connection grid
-    ; warning
-    @(303.53 mm, 196.90 mm): Symbol #PWR088 Pin 1 [Power input, Line]
-[endpoint_off_grid]: Symbol pin or wire end off connection grid
-    ; warning
-    @(303.53 mm, 196.85 mm): Vertical Wire, length 0.05 mm
-[endpoint_off_grid]: Symbol pin or wire end off connection grid
-    ; warning
-    @(303.53 mm, 196.90 mm): Vertical Wire, length 2.49 mm
-[lib_symbol_issues]: The current configuration does not include the symbol library 'Datalogger Slave'
-    ; warning
-    @(100.33 mm, 57.15 mm): Symbol IC9 [STM32G431C8T6TR_SPLIT]
-[lib_symbol_issues]: The current configuration does not include the symbol library 'Datalogger Slave'
-    ; warning
-    @(191.77 mm, 63.50 mm): Symbol IC9 [STM32G431C8T6TR_SPLIT]
-[isolated_pin_label]: Label connected to only one pin
-    ; warning
-    @(217.17 mm, 93.98 mm): Global Label 'MCU_LS_02'
-[lib_symbol_issues]: The current configuration does not include the symbol library 'Datalogger Slave'
-    ; warning
-    @(118.11 mm, 52.07 mm): Symbol IC1 [L6982CDR]
-[lib_symbol_issues]: The current configuration does not include the symbol library 'Datalogger Slave'
-    ; warning
-    @(118.11 mm, 93.98 mm): Symbol IC2 [L6982CDR]
-[lib_symbol_issues]: The current configuration does not include the symbol library 'Datalogger Slave'
-    ; warning
-    @(186.69 mm, 54.61 mm): Symbol IC3 [STEF12SGR]
-[lib_symbol_issues]: The current configuration does not include the symbol library 'Datalogger Slave'
-    ; warning
-    @(186.69 mm, 96.52 mm): Symbol IC4 [STEF12SGR]
 
 ***** Sheet /Source/
 
@@ -73,18 +10,17 @@ Report includes: Errors, Warnings
 ***** Sheet /Control/
 
 ***** Sheet /Digital Inputs/
-[missing_unit]: Symbol IC11 has unplaced units [ I/03, I/04 ]
-    ; warning
-    @(77.47 mm, 135.89 mm): Symbol IC11 [ESDALC6V1W5_SPLIT]
 
 ***** Sheet /Communications/
 
 ***** Sheet /Vehicle Connections/
 
- ** ERC messages: 22  Errors 0  Warnings 22
+ ** ERC messages: 0  Errors 0  Warnings 0
 
  ** Ignored checks:
     - Global label only appears once in the schematic
     - Four connection points are joined together
     - SPICE model issue
+    - Symbol doesn't match copy in library
     - Assigned footprint doesn't match footprint filters
+    - Symbol has units that are not placed

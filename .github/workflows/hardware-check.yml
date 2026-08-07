@@ -36,7 +36,7 @@ jobs:
 
             echo "Running ERC on $schematic"
 
-            if ! kicad-cli sch erc "$schematic" --exit-code-violations; then
+            if ! (cd "$(dirname "$schematic")" && kicad-cli sch erc "$(basename "$schematic")" --exit-code-violations); then
               error=1
             fi
 
@@ -53,7 +53,7 @@ jobs:
           while read file; do
             echo "Running DRC on $file"
 
-            if ! kicad-cli pcb drc "$file" --exit-code-violations; then
+            if ! (cd "$(dirname "$file")" && kicad-cli pcb drc "$(basename "$file")" --exit-code-violations); then
               error=1
             fi
 
