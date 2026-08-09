@@ -14,7 +14,7 @@ The power architecture separates vehicle power, sensor power, and sensitive elec
 
 ---
 
-## Power Architecture
+## System Power Architecture
 
 ```text
                          Vehicle Power
@@ -48,14 +48,14 @@ The power architecture separates vehicle power, sensor power, and sensitive elec
 
 The system is divided into several power domains according to the requirements of each subsystem.
 
-| Power Domain | Purpose | Typical Loads |
-|--------------|---------|---------------|
-| Vehicle Input | Primary system supply | Master and Slave modules |
-| Digital Power | Digital electronics | MPU, MCU, digital ICs |
-| Analog Power | Low-noise analog circuits | ADCs, signal conditioning |
-| Sensor Power | Vehicle sensors | Pressure, temperature, position sensors |
-| Communication Power | Communication interfaces | CAN, Ethernet, USB |
-| Peripheral Power | Local peripherals | Displays, memory, external devices |
+| Power Domain        | Purpose                   | Typical Loads                           |
+| ------------------- | ------------------------- | --------------------------------------- |
+| Vehicle Input       | Primary system supply     | Master and Slave modules                |
+| Digital Power       | Digital electronics       | MPU, MCU, digital ICs                   |
+| Analog Power        | Low-noise analog circuits | ADCs, signal conditioning               |
+| Sensor Power        | Vehicle sensors           | Pressure, temperature, position sensors |
+| Communication Power | Communication interfaces  | CAN, Ethernet, USB                      |
+| Peripheral Power    | Local peripherals         | Displays, memory, external devices      |
 
 ---
 
@@ -67,11 +67,11 @@ The input power stage is responsible for protecting the electronics against elec
 
 Typical protection functions include:
 
-- Reverse polarity protection
-- Overvoltage protection
-- Transient protection
-- Overcurrent protection
-- Input filtering
+* Reverse polarity protection
+* Overvoltage protection
+* Transient protection
+* Overcurrent protection
+* Input filtering
 
 The exact protection implementation is defined in the corresponding hardware design documentation.
 
@@ -101,35 +101,35 @@ Voltage conversion stages are selected according to the required output voltage,
 
 ---
 
-## Master Power Architecture
+## Master Power
 
 The Master contains its own power regulation and distribution stages.
 
 The Master power system provides regulated power to:
 
-- MPU
-- Storage
-- CAN interface
-- Ethernet interface
-- USB interface
-- Other local peripherals
+* MPU
+* Storage
+* CAN interface
+* Ethernet interface
+* USB interface
+* Other local peripherals
 
 The Master power architecture is designed to support the computational and communication requirements of the central processing module.
 
 ---
 
-## Slave Power Architecture
+## Slave Power
 
 Each Slave contains local power regulation and distribution.
 
 The Slave power system provides power to:
 
-- MCU
-- ADCs
-- Signal conditioning circuits
-- Communication interfaces
-- Vehicle sensors
-- Local peripherals
+* MCU
+* ADCs
+* Signal conditioning circuits
+* Communication interfaces
+* Vehicle sensors
+* Local peripherals
 
 Local regulation allows each Slave to operate as an independent acquisition module and reduces the need to distribute multiple regulated voltages throughout the vehicle.
 
@@ -151,17 +151,17 @@ Analog and digital circuits are treated as separate power domains where required
 
 Analog power is intended for noise-sensitive circuits such as:
 
-- ADCs
-- Operational amplifiers
-- Analog signal conditioning
-- Precision references
+* ADCs
+* Operational amplifiers
+* Analog signal conditioning
+* Precision references
 
 Digital power is used for:
 
-- MCUs
-- MPUs
-- Digital communication interfaces
-- Logic circuits
+* MCUs
+* MPUs
+* Digital communication interfaces
+* Logic circuits
 
 The separation of these domains helps reduce digital switching noise coupling into analog measurements.
 
@@ -171,15 +171,15 @@ The separation of these domains helps reduce digital switching noise coupling in
 
 The power architecture follows these principles:
 
-- Protected vehicle power input
-- Local voltage regulation
-- Separation of analog and digital power domains
-- Dedicated sensor power distribution
-- Modular power architecture
-- Protection against automotive electrical disturbances
-- Adequate current and thermal margins
-- Minimized noise coupling
-- Independent operation of acquisition modules
+* Protected vehicle power input
+* Local voltage regulation
+* Separation of analog and digital power domains
+* Dedicated sensor power distribution
+* Modular power architecture
+* Protection against automotive electrical disturbances
+* Adequate current and thermal margins
+* Minimized noise coupling
+* Independent operation of acquisition modules
 
 ---
 
