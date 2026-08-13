@@ -1397,12 +1397,6 @@
 		)
 	)
 	(junction
-		(at 186.69 104.14)
-		(diameter 0)
-		(color 255 243 0 1)
-		(uuid "1458675c-7ef6-45ec-a279-4232a09f44b2")
-	)
-	(junction
 		(at 209.55 106.68)
 		(diameter 0)
 		(color 13 0 0 1)
@@ -1419,12 +1413,6 @@
 		(diameter 0)
 		(color 13 0 0 1)
 		(uuid "adb606f9-48ba-4f9b-bb31-bda6b4f451f4")
-	)
-	(junction
-		(at 186.69 106.68)
-		(diameter 0)
-		(color 255 243 0 1)
-		(uuid "d636487e-bb22-4b11-a580-51d2d513ff46")
 	)
 	(junction
 		(at 140.97 113.03)
@@ -1474,17 +1462,6 @@
 			(type dash_dot_dot)
 		)
 		(uuid "1d576659-b996-430f-b780-05f75f479138")
-	)
-	(wire
-		(pts
-			(xy 186.69 109.22) (xy 186.69 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 243 0 1)
-		)
-		(uuid "23ec968e-1e4b-4be8-a047-2921de1a0acb")
 	)
 	(wire
 		(pts
@@ -1591,20 +1568,9 @@
 		(stroke
 			(width 0)
 			(type default)
-			(color 255 0 0 1)
-		)
-		(uuid "3846ec92-77a6-4067-b31e-35aec7937799")
-	)
-	(wire
-		(pts
-			(xy 186.69 106.68) (xy 187.96 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
 			(color 255 243 0 1)
 		)
-		(uuid "3c96326e-d9a9-4ce3-9372-4aaa5122c127")
+		(uuid "3846ec92-77a6-4067-b31e-35aec7937799")
 	)
 	(wire
 		(pts
@@ -1641,7 +1607,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 104.14) (xy 185.42 104.14)
+			(xy 186.69 104.14) (xy 187.96 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1649,17 +1615,6 @@
 			(color 255 243 0 1)
 		)
 		(uuid "47c61140-867d-464a-9968-3b534ed3c6cc")
-	)
-	(wire
-		(pts
-			(xy 186.69 106.68) (xy 186.69 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 243 0 1)
-		)
-		(uuid "4ae9e123-a583-42da-9e44-adc1d4785e4f")
 	)
 	(wire
 		(pts
@@ -1761,17 +1716,6 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 104.14) (xy 187.96 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 243 0 1)
-		)
-		(uuid "874738db-ec36-427a-9469-32efb9a0a98f")
-	)
-	(wire
-		(pts
 			(xy 209.55 109.22) (xy 209.55 110.49)
 		)
 		(stroke
@@ -1780,6 +1724,17 @@
 			(color 13 0 0 1)
 		)
 		(uuid "8e752453-9262-4f07-a21a-a57400c5903f")
+	)
+	(wire
+		(pts
+			(xy 186.69 106.68) (xy 187.96 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "92faa8be-1213-4feb-9571-10c0c286348f")
 	)
 	(polyline
 		(pts
@@ -2191,6 +2146,31 @@
 			)
 		)
 	)
+	(global_label "CAN_L"
+		(shape input)
+		(at 186.69 106.68 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.889 0.889)
+				(thickness 0.1111)
+			)
+			(justify right)
+		)
+		(uuid "6654c5d8-097e-4cd7-9383-00943a7ddedb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 180.6212 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "AN_SENS_03"
 		(shape input)
 		(at 115.57 95.25 180)
@@ -2236,31 +2216,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-	)
-	(global_label "CAN_L"
-		(shape input)
-		(at 209.55 101.6 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 0.889 0.889)
-				(thickness 0.1111)
-			)
-			(justify left)
-		)
-		(uuid "ac622086-572e-41dc-ae18-f3954b3ea86c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 215.6188 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 	)
@@ -2727,7 +2682,7 @@
 	)
 	(symbol
 		(lib_id "power:VSS")
-		(at 185.42 104.14 90)
+		(at 186.69 104.14 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2738,7 +2693,7 @@
 		(fields_autoplaced yes)
 		(uuid "7665f535-b743-490c-9bc9-c6fb7daaa00a")
 		(property "Reference" "#PWR0147"
-			(at 189.23 104.14 0)
+			(at 190.5 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2749,7 +2704,7 @@
 			)
 		)
 		(property "Value" "VBAT"
-			(at 181.61 104.1399 90)
+			(at 182.88 104.1399 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2760,7 +2715,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 185.42 104.14 0)
+			(at 186.69 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2771,7 +2726,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 104.14 0)
+			(at 186.69 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2782,7 +2737,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VSS\""
-			(at 185.42 104.14 0)
+			(at 186.69 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2799,6 +2754,164 @@
 			(project "PCB"
 				(path "/53ac5407-c20a-483b-9c15-01b665bcfde4/5160550a-89e0-4dc6-a66e-b828bca92105"
 					(reference "#PWR0147")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VSS")
+		(at 209.55 101.6 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9702c1ec-d41d-4568-af42-2616baac0f6b")
+		(property "Reference" "#PWR0160"
+			(at 205.74 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBAT"
+			(at 213.36 101.5999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.55 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VSS\""
+			(at 209.55 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6e4daadc-9612-4ef0-ab5b-0a8b478d96bd")
+		)
+		(instances
+			(project "PCB"
+				(path "/53ac5407-c20a-483b-9c15-01b665bcfde4/5160550a-89e0-4dc6-a66e-b828bca92105"
+					(reference "#PWR0160")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VSS")
+		(at 186.69 109.22 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cd5412e8-3ac5-42a8-9880-4c4952dc9176")
+		(property "Reference" "#PWR0153"
+			(at 190.5 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBAT"
+			(at 182.88 109.2199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VSS\""
+			(at 186.69 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "833dbfcb-b1cd-4699-a371-85a2694ea7e9")
+		)
+		(instances
+			(project "PCB"
+				(path "/53ac5407-c20a-483b-9c15-01b665bcfde4/5160550a-89e0-4dc6-a66e-b828bca92105"
+					(reference "#PWR0153")
 					(unit 1)
 				)
 			)

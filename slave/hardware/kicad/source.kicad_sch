@@ -3237,12 +3237,6 @@
 		(uuid "c15793ae-dbb5-4cff-aef4-ebc64a985363")
 	)
 	(junction
-		(at 156.21 130.81)
-		(diameter 0)
-		(color 255 243 0 1)
-		(uuid "c5dccc37-d62d-4576-97a8-1e1ca29fe6ab")
-	)
-	(junction
 		(at 219.71 101.6)
 		(diameter 0)
 		(color 255 243 0 1)
@@ -3283,6 +3277,12 @@
 		(diameter 0)
 		(color 0 0 0 1)
 		(uuid "ed884d39-a941-433b-9459-d3576a71cce4")
+	)
+	(junction
+		(at 156.21 130.81)
+		(diameter 0)
+		(color 255 243 0 1)
+		(uuid "f57089ec-8921-428c-ad3a-1eba395423aa")
 	)
 	(no_connect
 		(at 186.69 99.06)
@@ -4337,7 +4337,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 130.81) (xy 146.05 130.81)
+			(xy 139.7 130.81) (xy 143.51 130.81)
 		)
 		(stroke
 			(width 0)
@@ -4348,7 +4348,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 130.81) (xy 156.21 130.81)
+			(xy 151.13 130.81) (xy 156.21 130.81)
 		)
 		(stroke
 			(width 0)
@@ -5467,7 +5467,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 83.5152 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -6239,7 +6239,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 70.8152 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -7114,7 +7114,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 91.1352 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -7300,7 +7300,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_01005_0402Metric"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 207.01 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -8263,7 +8263,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 166.0652 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -8373,7 +8373,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 176.2252 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -8646,7 +8646,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 72.0852 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -9009,7 +9009,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 80.9752 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -9200,7 +9200,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_01005_0402Metric"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 224.79 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -9374,7 +9374,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 109.22 97.4852 0)
 			(hide yes)
 			(show_name no)
@@ -9620,7 +9620,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Probe")
-		(at 139.7 130.81 0)
+		(at 156.21 130.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9628,10 +9628,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "81bc3545-0d98-49b7-9d8c-fe6682f8064f")
 		(property "Reference" "TP4"
-			(at 143.51 129.2224 0)
+			(at 159.766 127.508 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9642,7 +9641,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 143.51 130.4924 0)
+			(at 160.02 130.4924 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9653,7 +9652,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
-			(at 144.78 130.81 0)
+			(at 161.29 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9664,7 +9663,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 130.81 0)
+			(at 161.29 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9675,7 +9674,7 @@
 			)
 		)
 		(property "Description" "test point (alternative probe-style design)"
-			(at 139.7 130.81 0)
+			(at 156.21 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9737,7 +9736,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 116.5352 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -10015,7 +10014,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 70.8152 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -10093,7 +10092,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 149.86 130.81 90)
+		(at 147.32 130.81 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10103,7 +10102,7 @@
 		(dnp no)
 		(uuid "8a920c65-7ff3-4ed9-8a2b-9d3d61e8b89c")
 		(property "Reference" "F1"
-			(at 146.05 129.794 90)
+			(at 143.51 129.794 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10113,7 +10112,7 @@
 			)
 		)
 		(property "Value" "4A"
-			(at 153.924 129.794 90)
+			(at 151.384 129.794 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10123,7 +10122,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_0805_2012Metric"
-			(at 149.86 132.588 90)
+			(at 147.32 132.588 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10134,7 +10133,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 130.81 0)
+			(at 147.32 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10145,7 +10144,7 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 149.86 130.81 0)
+			(at 147.32 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10207,7 +10206,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 109.22 55.5752 0)
 			(hide yes)
 			(show_name no)
@@ -10317,7 +10316,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 166.0652 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -10510,7 +10509,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 155.9052 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -11125,7 +11124,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 91.1352 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -11317,7 +11316,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_01005_0402Metric"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 215.9 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -11416,7 +11415,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 98.7552 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -11944,7 +11943,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 116.5352 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -12277,19 +12276,18 @@
 		(fields_autoplaced yes)
 		(uuid "d38f4a94-722f-4459-b4d6-1b8cb4ddb95a")
 		(property "Reference" "C5"
-			(at 83.82 97.7899 0)
+			(at 83.82 98.4249 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(color 255 106 0 1)
 				)
 				(justify left)
 			)
 		)
 		(property "Value" "10uF"
-			(at 83.82 100.3299 0)
+			(at 83.82 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12299,7 +12297,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 80.9752 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -12409,7 +12407,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 176.2252 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -13026,7 +13024,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 155.9052 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -13217,7 +13215,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_01005_0402Metric"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 198.12 144.78 0)
 			(hide yes)
 			(show_name no)
