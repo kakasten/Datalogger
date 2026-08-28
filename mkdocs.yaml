@@ -45,5 +45,11 @@ markdown_extensions:
   - attr_list
   - tables
 
+extra_javascript:
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
 nav:
   - Home: index.md
+
+  - Architecture:
+    - Sampling Rates: architecture/sampling_rates.md
