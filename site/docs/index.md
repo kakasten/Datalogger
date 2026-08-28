@@ -33,55 +33,37 @@ The Datalogger consists of:
 
 ## Documentation
 
-### Getting Started
-
-Start here if you are new to the project.
-
-* [Getting Started](getting-started.md)
-
-### Requirements
-
-System and module requirements define what the Datalogger must provide.
-
-* [Slave Requirements](requirements/slave-requirements.md)
+The documentation is organized according to the main areas of the Datalogger system.
 
 ### Architecture
 
-Architecture documents describe how the system is structured and how its components interact.
+Architecture documentation describes the system design and the engineering decisions behind it.
 
-* [System Architecture](architecture/system.md)
-* [Slave Architecture](architecture/slave.md)
-* [Hardware Architecture](architecture/hardware.md)
-* [Software Architecture](architecture/software.md)
-* [Communication Architecture](architecture/communication.md)
+* [Sampling Rates](architecture/sampling_rates.md)
 
 ### Hardware
 
 Documentation related to the electronic design and PCB implementation.
 
-* Schematic
-* PCB
-* Bill of Materials
+> Hardware documentation is currently under development.
 
 ### Firmware
 
 Documentation related to the embedded software running on the Datalogger modules.
 
-* Firmware Architecture
-* Drivers
-* Tasks and Scheduling
+> Firmware documentation is currently under development.
 
-### Architecture Decisions
+### Communication
 
-Important technical decisions are documented using Architecture Decision Records (ADRs).
+Documentation related to the communication interfaces and protocols used by the Datalogger.
 
-* [Architecture Decision Records](adr/)
+> Communication documentation is currently under development.
 
 ## Project Status
 
 The Datalogger is currently under active development.
 
-Hardware and firmware documentation may change as the design evolves and new requirements are established.
+Hardware, firmware and system documentation may change as the design evolves and new requirements are established.
 
 ---
 

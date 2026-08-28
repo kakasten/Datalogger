@@ -114,9 +114,9 @@ A final sampling rate should be higher than the strict theoretical minimum when:
 
 The margin is therefore selected from the complete system requirement rather than applying an arbitrary multiplier to every sensor.
 
-* * *
+***
 
-# 2\. System-Level Initial Rates
+## 2\. System-Level Initial Rates
 
 The following values are the **initial engineering targets** for the Datalogger.
 
@@ -134,13 +134,13 @@ These are not arbitrary values. Each section below derives the rate from physica
 
 > **Important:** Wheel Speed, Steering, Suspension and Brake Pressure rates are architecture targets until the final sensor models and measured vehicle data are available. The document deliberately does not treat estimated physical bandwidths as immutable facts.
 
-* * *
+***
 
-# 3\. Sensor Acquisition Rates
+## 3\. Sensor Acquisition Rates
 
-## 3.1 Wheel Speed
+### 3.1 Wheel Speed
 
-### 3.1.1 What must be measured?
+#### 3.1.1 What must be measured?
 
 The objective is not to reconstruct the electrical waveform of the wheel sensor. The objective is to obtain a sufficiently fast estimate of wheel rotational speed to analyze:
 
@@ -173,7 +173,7 @@ $$
 
 The wheel speed is then calculated from wheel circumference.
 
-### 3.1.2 Maximum pulse frequency
+#### 3.1.2 Maximum pulse frequency
 
 For wheel diameter `D`, vehicle speed `v` and `PPR` pulses/revolution:
 
@@ -201,7 +201,7 @@ This calculation is **not** the sampling-rate requirement of the wheel-speed var
 
 The final PPR and loaded wheel diameter must be inserted once the wheel-speed sensor is finalized.
 
-### 3.1.3 Braking event
+#### 3.1.3 Braking event
 
 Consider the reference event:
 
@@ -243,7 +243,7 @@ If wheel lock develops over approximately 5–10 ms, 100 Hz cannot resolve the e
 
 At 1 kHz, the same event contains 5–10 samples. This makes the onset, slope and timing of the wheel-speed deviation measurable rather than relying on a single sample transition.
 
-### 3.1.4 Why not 2 kHz?
+#### 3.1.4 Why not 2 kHz?
 
 2 kHz would provide more temporal resolution, but doubles the acquisition workload compared with 1 kHz.
 
@@ -257,11 +257,11 @@ $$
 
 The value should be re-evaluated if measured wheel-lock transients show significant sub-5 ms behavior.
 
-### 3.1.5 Processing
+#### 3.1.5 Processing
 
 Wheel-speed processing should run at 1 kHz so that the latest timer-capture measurement can be converted and filtered with approximately 1 ms update resolution.
 
-### 3.1.6 CAN
+#### 3.1.6 CAN
 
 Sending wheel speed at 1 kHz for all four wheels would be unnecessarily expensive on a 500 kbit/s CAN bus.
 
@@ -277,15 +277,15 @@ The four wheel speeds should preferably be packed into one CAN frame rather than
 
 * * *
 
-## 3.2 Steering Angle
+### 3.2 Steering Angle
 
-### 3.2.1 Physical behavior
+#### 3.2.1 Physical behavior
 
 Steering is a human input, so its useful bandwidth is much lower than the IMU or wheel-speed pulse signal. However, the Datalogger must correlate steering input with the resulting yaw rate, lateral acceleration and suspension response.
 
 The critical requirement is therefore not only Nyquist bandwidth but also **cross-sensor timing resolution**.
 
-### 3.2.2 Candidate rates
+#### 3.2.2 Candidate rates
 
 Consider a fast steering event lasting 50 ms:
 
@@ -300,7 +300,7 @@ At 50 Hz, a fast steering transient is represented by only 2–3 points. At 200 
 
 This is valuable when comparing steering input against yaw-rate and lateral-acceleration response.
 
-### 3.2.3 Nyquist
+#### 3.2.3 Nyquist
 
 The exact steering bandwidth must ultimately be measured from the vehicle data. If a maximum relevant frequency `f_max` is identified, the theoretical minimum is:
 
@@ -310,7 +310,7 @@ $$
 
 The selected 200 Hz rate leaves a large margin for the expected low-frequency human input while keeping the acquisition inexpensive.
 
-### 3.2.4 Selection
+#### 3.2.4 Selection
 
 $$
 \boxed{f_{acq}=200\ Hz}
@@ -328,9 +328,9 @@ $$
 
 * * *
 
-## 3.3 Suspension Position
+### 3.3 Suspension Position
 
-### 3.3.1 Physical behavior
+#### 3.3.1 Physical behavior
 
 Suspension position contains several dynamic components:
 
@@ -342,7 +342,7 @@ Suspension position contains several dynamic components:
 
 The previous engineering analysis identifies wheel-hop around 10–15 Hz and impact content around the 25 Hz region. These values should be validated experimentally rather than treated as exact limits. fileciteturn2file5L255-L264
 
-### 3.3.2 Nyquist
+#### 3.3.2 Nyquist
 
 Using 25 Hz as the current design bandwidth:
 
@@ -366,7 +366,7 @@ $$
 
 samples per cycle.
 
-### 3.3.3 Impact resolution
+#### 3.3.3 Impact resolution
 
 Consider a 20 ms suspension transient:
 
@@ -379,7 +379,7 @@ Consider a 20 ms suspension transient:
 
 For suspension analysis, the distinction between compression and rebound can be important. 500 Hz provides 10 points over a 20 ms event while remaining well within the capability of the STM32G431 ADC architecture for analog channels.
 
-### 3.3.4 Selection
+#### 3.3.4 Selection
 
 $$
 \boxed{f_{acq}=500\ Hz}
@@ -397,9 +397,9 @@ $$
 
 * * *
 
-## 3.4 IMU
+### 3.4 IMU
 
-### 3.4.1 Sensor-limited rate
+#### 3.4.1 Sensor-limited rate
 
 The VN-300 is different from the analog sensors because its bandwidth and output rate are specified by the manufacturer.
 
@@ -427,7 +427,7 @@ However, the VN-300 used in this project provides IMU data at up to 400 Hz. 
 
 This means the system cannot claim to preserve the full specified 230/265 Hz sensor bandwidth from a 400 Hz output stream. The sensor's own output-rate limitation must be considered when defining the usable acquisition bandwidth.
 
-### 3.4.2 Selection
+#### 3.4.2 Selection
 
 $$
 \boxed{f_{acq}=400\ Hz}
@@ -449,9 +449,9 @@ If a future IMU configuration with a higher output rate is selected, this sectio
 
 * * *
 
-## 3.5 Brake Pressure
+### 3.5 Brake Pressure
 
-### 3.5.1 Critical event
+#### 3.5.1 Critical event
 
 Brake pressure is important because it must be correlated with wheel-speed behavior during braking.
 
@@ -473,7 +473,7 @@ $$
 \frac{40}{0.15}\approx267\ bar/s
 $$
 
-### 3.5.2 Resolution comparison
+#### 3.5.2 Resolution comparison
 
 The pressure change between samples is approximately:
 
@@ -501,7 +501,7 @@ $$
 
 samples.
 
-### 3.5.3 Correlation with wheel lock
+#### 3.5.3 Correlation with wheel lock
 
 If the wheel-speed system is sampled at 1 kHz, acquiring brake pressure at 1 kHz provides the same 1 ms time base.
 
@@ -521,7 +521,7 @@ Vehicle deceleration
 
 with a common 1 ms acquisition grid.
 
-### 3.5.4 Selection
+#### 3.5.4 Selection
 
 $$
 \boxed{f_{acq}=1\ kHz}
@@ -541,9 +541,9 @@ The final pressure-sensor response time must be checked against the selected 1 k
 
 * * *
 
-## 3.6 Temperatures
+### 3.6 Temperatures
 
-### 3.6.1 Physical behavior
+#### 3.6.1 Physical behavior
 
 Temperature is fundamentally different from wheel speed, pressure and IMU measurements.
 
@@ -571,7 +571,7 @@ $$
 f_c=\frac{1}{2\pi\tau}
 $$
 
-### 3.6.2 Example
+#### 3.6.2 Example
 
 If a temperature sensor has an effective thermal time constant of 0.5 s:
 
@@ -589,7 +589,7 @@ samples per thermal corner cycle.
 
 Therefore, a 20 Hz acquisition target is already heavily oversampled for a typical thermal response.
 
-### 3.6.3 Selection
+#### 3.6.3 Selection
 
 Because the final temperature sensor and mounting configuration determine the actual thermal time constant, the exact rate must be validated experimentally.
 
@@ -611,9 +611,9 @@ This rate is intentionally conservative for temperature acquisition while avoidi
 
 * * *
 
-## 3.7 Pitot Tube
+### 3.7 Pitot Tube
 
-### 3.7.1 Physical behavior
+#### 3.7.1 Physical behavior
 
 The Pitot system measures differential pressure and converts it to airspeed.
 
@@ -621,7 +621,7 @@ The relevant vehicle-level dynamics are much slower than wheel-speed or IMU tran
 
 The current design target is 100 Hz acquisition so that a 10 ms time base is available for acceleration and braking analysis without making the Pitot channel a high-rate data consumer.
 
-### 3.7.2 Vehicle acceleration example
+#### 3.7.2 Vehicle acceleration example
 
 Consider:
 
@@ -653,7 +653,7 @@ This is already fine temporal resolution for vehicle-level airspeed analysis.
 
 At 50 Hz the change is 0.5 km/h/sample, still useful, but 100 Hz gives additional margin for sensor dynamics and cross-correlation.
 
-### 3.7.3 Selection
+#### 3.7.3 Selection
 
 $$
 \boxed{f_{acq}=100\ Hz}
@@ -671,7 +671,7 @@ The final MS4525DO configuration must be checked against its selected digital ou
 
 * * *
 
-# 4\. Processing Rates
+## 4\. Processing Rates
 
 Acquisition and processing are related but not necessarily identical.
 
@@ -687,7 +687,7 @@ The processing rate is selected according to what the algorithm needs.
 | Temperature | 20 Hz | 10 Hz | thermal signal is slow |
 | Pitot | 100 Hz | 100 Hz | pressure-to-speed conversion and filtering |
 
-## 4.1 Filtering and downsampling
+### 4.1 Filtering and downsampling
 
 High-rate acquisition allows the Slave to perform filtering before reducing the rate for CAN.
 
@@ -714,9 +714,9 @@ The downsampling factor must be chosen only after filtering. Directly dropping s
 
 * * *
 
-# 5\. CAN Transmission Rates
+## 5\. CAN Transmission Rates
 
-## 5.1 Why CAN rate differs from acquisition rate
+### 5.1 Why CAN rate differs from acquisition rate
 
 The Datalogger may need high-rate information internally without needing to transmit every sample over the vehicle CAN bus.
 
@@ -737,7 +737,7 @@ The high-rate data can be retained locally, while CAN carries:
 - event flags;
 - lower-rate telemetry.
 
-## 5.2 Initial CAN rates
+### 5.2 Initial CAN rates
 
 | Signal | Acquisition | CAN | Reduction |
 | --- | ---: | ---: | ---: |
@@ -753,9 +753,9 @@ The reduction is intentional. The acquisition system preserves the higher-rate d
 
 * * *
 
-# 6\. Rate Allocation / CAN Budget
+## 6\. Rate Allocation / CAN Budget
 
-## 6.1 CAN assumptions
+### 6.1 CAN assumptions
 
 Initial network assumptions:
 
@@ -777,7 +777,7 @@ $$
 
 The exact frame length depends on identifier, data length, bit stuffing and frame format. The 150-bit value is therefore a **budgeting approximation**, not a universal exact CAN frame length.
 
-## 6.2 Message packing
+### 6.2 Message packing
 
 CAN budget must be calculated from **frames**, not individual physical signals.
 
@@ -805,7 +805,7 @@ Brake Frame
 
 and suspension channels can be grouped into one or more frames.
 
-## 6.3 Proposed packed-frame budget
+### 6.3 Proposed packed-frame budget
 
 An initial packed-frame architecture is:
 
@@ -849,7 +849,7 @@ This leaves substantial headroom for:
 - retransmissions;
 - changes in message packing.
 
-## 6.4 Why sending every acquisition sample is not acceptable
+### 6.4 Why sending every acquisition sample is not acceptable
 
 If every physical signal were transmitted independently at its acquisition rate, the network would become saturated.
 
@@ -877,7 +877,7 @@ This is physically impossible on a 500 kbit/s bus.
 
 The conclusion is not that the sensors must be sampled more slowly. The conclusion is that **high-rate acquisition and network transmission are different architectural requirements**.
 
-## 6.5 Why packing matters
+### 6.5 Why packing matters
 
 Without packing, four wheel-speed values at 200 Hz consume four frames per update:
 
@@ -903,7 +903,7 @@ Therefore, message packing is part of the sampling-rate architecture, not merely
 
 * * *
 
-# 7\. Storage Budget
+## 7\. Storage Budget
 
 Storage must be evaluated separately from CAN.
 
@@ -923,7 +923,7 @@ If the local logger stores all high-rate acquisition streams, the storage rate m
 
 For an illustrative 16-byte record:
 
-### Main high-rate streams
+#### Main high-rate streams
 
 Approximate logical sample rate:
 
@@ -960,7 +960,7 @@ The important point is that storage is feasible at these rates, but unnecessaril
 
 * * *
 
-# 8\. MCU / Acquisition Limitations
+## 8\. MCU / Acquisition Limitations
 
 The STM32G431 is capable of high-rate acquisition. The device contains two 12-bit ADCs with up to 4 MSPS conversion rate at full resolution, plus DMA and timer peripherals suitable for deterministic acquisition. 
 
@@ -985,7 +985,7 @@ $$
 
 for every real-time acquisition path.
 
-## 8.1 Interrupts
+### 8.1 Interrupts
 
 High-frequency acquisition should use hardware peripherals and DMA where possible.
 
@@ -993,7 +993,7 @@ A 1 kHz software interrupt for every analog sample is unnecessary if a timer-tri
 
 Wheel Speed should use timer input capture rather than a high-rate software GPIO polling loop.
 
-## 8.2 Timing determinism
+### 8.2 Timing determinism
 
 A nominal frequency is not sufficient. The actual sampling interval should remain deterministic:
 
@@ -1005,7 +1005,7 @@ Excessive CPU or bus load can introduce jitter. Therefore, a lower deterministic
 
 * * *
 
-# 9\. What Happens If Frequencies Are Increased Indiscriminately?
+## 9\. What Happens If Frequencies Are Increased Indiscriminately?
 
 Increasing every channel to 10 kHz would produce far more data, but most channels would not contain useful information at that rate.
 
@@ -1024,11 +1024,11 @@ The correct design principle is therefore:
 
 * * *
 
-# 10\. Validation Plan
+## 10\. Validation Plan
 
 The frequencies in this document should be validated experimentally before being frozen as final requirements.
 
-## 10.1 FFT / spectral validation
+### 10.1 FFT / spectral validation
 
 Record representative signals at the highest practical rate and calculate their spectra.
 
@@ -1046,7 +1046,7 @@ $$
 
 with practical filtering margin.
 
-## 10.2 Transient validation
+### 10.2 Transient validation
 
 For each critical event, measure the shortest relevant duration:
 
@@ -1067,7 +1067,7 @@ $$
 
 The chosen rate should provide enough samples to identify the event reliably.
 
-## 10.3 A/B sampling-rate test
+### 10.3 A/B sampling-rate test
 
 When practical, compare recordings at:
 
@@ -1077,7 +1077,7 @@ When practical, compare recordings at:
 
 If downsampling the high-rate recording to the nominal rate produces no meaningful loss in the quantities of interest, the nominal rate is supported experimentally.
 
-## 10.4 Final acceptance criteria
+### 10.4 Final acceptance criteria
 
 A sampling rate should be considered final when:
 
@@ -1094,7 +1094,7 @@ A sampling rate should be considered final when:
 
 * * *
 
-# 11\. Final Rate Allocation
+## 11\. Final Rate Allocation
 
 | Sensor | Acquisition | Processing | CAN | Main justification |
 | --- | ---: | ---: | ---: | --- |
@@ -1107,29 +1107,21 @@ A sampling rate should be considered final when:
 
 * * *
 
-# 12\. Design Decision
+## 12\. Design Decision
 
 The Datalogger does **not** use one common sampling frequency for all sensors.
 
 The rate allocation follows:
 
-$$
-\boxed{
-\text{Physical behavior}
-\rightarrow
-\text{critical event}
-\rightarrow
-\text{required temporal resolution}
-\rightarrow
-\text{Nyquist}
-\rightarrow
-\text{sensor limits}
-\rightarrow
-\text{MCU limits}
-\rightarrow
-\text{CAN/storage budget}
-}
-$$
+| Step | Question | Result |
+|---|---|---|
+| 1. Physical behavior | What phenomenon are we measuring? | Signal characteristics |
+| 2. Critical event | What is the fastest relevant event? | Required temporal resolution |
+| 3. Nyquist criterion | What bandwidth must be sampled? | Minimum theoretical rate |
+| 4. Sensor limitations | Can the sensor provide this rate? | Sensor constraint |
+| 5. MCU limitations | Can the MCU acquire and process it? | Hardware constraint |
+| 6. CAN / storage budget | Can the system transport and store the data? | System constraint |
+| 7. Final rate | What rate satisfies all constraints? | Selected sampling rate |
 
 The resulting architecture deliberately separates acquisition from communication:
 
