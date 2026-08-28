@@ -5,7 +5,7 @@ site_author: Kakasten
 repo_name: kakasten/Datalogger
 repo_url: https://github.com/kakasten/Datalogger
 
-docs_dir: site/docs
+docs_dir: website/docs
 
 theme:
   name: material
