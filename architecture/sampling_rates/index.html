@@ -1,0 +1,3442 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Datalogger and telemetry system documentation">
+      
+      
+        <meta name="author" content="Kakasten">
+      
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Sampling Rates - Datalogger</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sampling-rates" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Datalogger" class="md-header__button md-logo" aria-label="Datalogger" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Datalogger
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Sampling Rates
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/kakasten/Datalogger" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kakasten/Datalogger
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Architecture
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Datalogger" class="md-nav__button md-logo" aria-label="Datalogger" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Datalogger
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/kakasten/Datalogger" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kakasten/Datalogger
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Architecture
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sampling Rates
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sampling Rates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objective
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-design-methodology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Design Methodology
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Design Methodology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-physical-signal-bandwidth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Physical signal bandwidth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-nyquist-shannon-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Nyquist-Shannon theorem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-transient-resolution-criterion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Transient-resolution criterion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 Filtering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-safety-engineering-margin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5 Safety / engineering margin
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-system-level-initial-rates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. System-Level Initial Rates
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-sensor-acquisition-rates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Sensor Acquisition Rates
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Sensor Acquisition Rates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-wheel-speed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Wheel Speed
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1 Wheel Speed">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#311-what-must-be-measured" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1.1 What must be measured?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#312-maximum-pulse-frequency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1.2 Maximum pulse frequency
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#313-braking-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1.3 Braking event
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#314-why-not-2-khz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1.4 Why not 2 kHz?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#315-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1.5 Processing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#316-can" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1.6 CAN
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-steering-angle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Steering Angle
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Steering Angle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#321-physical-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.1 Physical behavior
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#322-candidate-rates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.2 Candidate rates
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#323-nyquist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.3 Nyquist
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#324-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.4 Selection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-suspension-position" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Suspension Position
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3 Suspension Position">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#331-physical-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3.1 Physical behavior
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#332-nyquist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3.2 Nyquist
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#333-impact-resolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3.3 Impact resolution
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#334-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3.4 Selection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-imu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 IMU
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.4 IMU">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#341-sensor-limited-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4.1 Sensor-limited rate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#342-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4.2 Selection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-brake-pressure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Brake Pressure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.5 Brake Pressure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#351-critical-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5.1 Critical event
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#352-resolution-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5.2 Resolution comparison
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#353-correlation-with-wheel-lock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5.3 Correlation with wheel lock
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#354-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5.4 Selection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-temperatures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 Temperatures
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.6 Temperatures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#361-physical-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6.1 Physical behavior
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#362-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6.2 Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#363-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6.3 Selection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-pitot-tube" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7 Pitot Tube
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.7 Pitot Tube">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#371-physical-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7.1 Physical behavior
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#372-vehicle-acceleration-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7.2 Vehicle acceleration example
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#373-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7.3 Selection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-processing-rates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Processing Rates
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Processing Rates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-filtering-and-downsampling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Filtering and downsampling
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-can-transmission-rates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. CAN Transmission Rates
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. CAN Transmission Rates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-why-can-rate-differs-from-acquisition-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Why CAN rate differs from acquisition rate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-initial-can-rates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Initial CAN rates
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-rate-allocation-can-budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Rate Allocation / CAN Budget
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Rate Allocation / CAN Budget">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-can-assumptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 CAN assumptions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-message-packing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Message packing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-proposed-packed-frame-budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Proposed packed-frame budget
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-why-sending-every-acquisition-sample-is-not-acceptable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Why sending every acquisition sample is not acceptable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-why-packing-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5 Why packing matters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-storage-budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Storage Budget
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Storage Budget">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main-high-rate-streams" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Main high-rate streams
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-mcu-acquisition-limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. MCU / Acquisition Limitations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. MCU / Acquisition Limitations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-interrupts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 Interrupts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-timing-determinism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 Timing determinism
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-what-happens-if-frequencies-are-increased-indiscriminately" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. What Happens If Frequencies Are Increased Indiscriminately?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-validation-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Validation Plan
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Validation Plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-fft-spectral-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 FFT / spectral validation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-transient-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 Transient validation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103-ab-sampling-rate-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3 A/B sampling-rate test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#104-final-acceptance-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4 Final acceptance criteria
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-final-rate-allocation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Final Rate Allocation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-design-decision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Design Decision
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objective
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-design-methodology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Design Methodology
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Design Methodology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-physical-signal-bandwidth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Physical signal bandwidth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-nyquist-shannon-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Nyquist-Shannon theorem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-transient-resolution-criterion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Transient-resolution criterion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 Filtering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-safety-engineering-margin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5 Safety / engineering margin
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-system-level-initial-rates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. System-Level Initial Rates
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-sensor-acquisition-rates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Sensor Acquisition Rates
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Sensor Acquisition Rates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-wheel-speed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Wheel Speed
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1 Wheel Speed">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#311-what-must-be-measured" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1.1 What must be measured?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#312-maximum-pulse-frequency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1.2 Maximum pulse frequency
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#313-braking-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1.3 Braking event
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#314-why-not-2-khz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1.4 Why not 2 kHz?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#315-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1.5 Processing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#316-can" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1.6 CAN
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-steering-angle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Steering Angle
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Steering Angle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#321-physical-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.1 Physical behavior
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#322-candidate-rates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.2 Candidate rates
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#323-nyquist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.3 Nyquist
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#324-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.4 Selection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-suspension-position" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Suspension Position
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3 Suspension Position">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#331-physical-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3.1 Physical behavior
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#332-nyquist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3.2 Nyquist
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#333-impact-resolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3.3 Impact resolution
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#334-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3.4 Selection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-imu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 IMU
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.4 IMU">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#341-sensor-limited-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4.1 Sensor-limited rate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#342-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4.2 Selection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-brake-pressure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Brake Pressure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.5 Brake Pressure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#351-critical-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5.1 Critical event
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#352-resolution-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5.2 Resolution comparison
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#353-correlation-with-wheel-lock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5.3 Correlation with wheel lock
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#354-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5.4 Selection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-temperatures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 Temperatures
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.6 Temperatures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#361-physical-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6.1 Physical behavior
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#362-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6.2 Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#363-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6.3 Selection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-pitot-tube" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7 Pitot Tube
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.7 Pitot Tube">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#371-physical-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7.1 Physical behavior
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#372-vehicle-acceleration-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7.2 Vehicle acceleration example
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#373-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7.3 Selection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-processing-rates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Processing Rates
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Processing Rates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-filtering-and-downsampling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Filtering and downsampling
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-can-transmission-rates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. CAN Transmission Rates
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. CAN Transmission Rates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-why-can-rate-differs-from-acquisition-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Why CAN rate differs from acquisition rate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-initial-can-rates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Initial CAN rates
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-rate-allocation-can-budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Rate Allocation / CAN Budget
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Rate Allocation / CAN Budget">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-can-assumptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 CAN assumptions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-message-packing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Message packing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-proposed-packed-frame-budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Proposed packed-frame budget
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-why-sending-every-acquisition-sample-is-not-acceptable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Why sending every acquisition sample is not acceptable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-why-packing-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5 Why packing matters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-storage-budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Storage Budget
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Storage Budget">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main-high-rate-streams" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Main high-rate streams
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-mcu-acquisition-limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. MCU / Acquisition Limitations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. MCU / Acquisition Limitations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-interrupts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 Interrupts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-timing-determinism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 Timing determinism
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-what-happens-if-frequencies-are-increased-indiscriminately" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. What Happens If Frequencies Are Increased Indiscriminately?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-validation-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Validation Plan
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Validation Plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-fft-spectral-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 FFT / spectral validation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-transient-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 Transient validation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103-ab-sampling-rate-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3 A/B sampling-rate test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#104-final-acceptance-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4 Final acceptance criteria
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-final-rate-allocation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Final Rate Allocation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-design-decision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Design Decision
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="sampling-rates">Sampling Rates</h1>
+<h2 id="objective">Objective</h2>
+<p>This document defines the acquisition, processing and communication rates for the Datalogger.</p>
+<p>The goal is not to maximize the sampling frequency. The goal is to select, for each signal, the <strong>lowest practical rate that preserves the information required for vehicle analysis</strong>, while remaining deterministic and compatible with the sensor, MCU, CAN bus and storage system.</p>
+<p>The design therefore separates four different concepts:</p>
+<ol>
+<li><strong>Physical bandwidth</strong> — how quickly the measured phenomenon can meaningfully change.</li>
+<li><strong>Acquisition rate</strong> — how often the Slave samples or updates the signal.</li>
+<li><strong>Processing rate</strong> — how often filtering, estimation and control-oriented calculations execute.</li>
+<li><strong>CAN transmission rate</strong> — how often the processed information is transmitted to the vehicle network.</li>
+</ol>
+<p>These rates do not have to be equal.</p>
+<hr />
+<h2 id="1-design-methodology">1. Design Methodology</h2>
+<h3 id="11-physical-signal-bandwidth">1.1 Physical signal bandwidth</h3>
+<p>Every measurement has a useful bandwidth. The bandwidth is not necessarily the same as the maximum frequency generated by the sensor interface.</p>
+<p>For example, a wheel-speed sensor may generate hundreds of pulses per second, but the quantity of interest is wheel rotational speed. The pulse frequency determines the requirements of the <strong>input-capture hardware</strong>, while the required wheel-speed update rate is determined by vehicle dynamics and the temporal resolution required to identify events such as wheel slip or wheel lock.</p>
+<p>The design therefore distinguishes:</p>
+<div class="highlight"><pre><span></span><code>Physical phenomenon
+       |
+       +--&gt; useful signal bandwidth
+       |
+       +--&gt; critical transient duration
+       |
+       +--&gt; sensor/interface bandwidth
+</code></pre></div>
+<h3 id="12-nyquist-shannon-theorem">1.2 Nyquist-Shannon theorem</h3>
+<p>For a band-limited signal with highest relevant frequency <code>f_max</code>, uniform sampling requires:</p>
+<p>$$
+ f_s &gt; 2f_{max}
+$$</p>
+<p>The theoretical Nyquist minimum is therefore:</p>
+<p>$$
+f_{Nyquist}=2f_{max}
+$$</p>
+<p>This is a <strong>necessary condition</strong>, not a complete engineering specification.</p>
+<p>Sampling exactly at the Nyquist limit leaves no useful transition band for a real anti-aliasing filter and gives poor temporal resolution for transient analysis. The final sampling rate must therefore also consider the required event resolution.</p>
+<h3 id="13-transient-resolution-criterion">1.3 Transient-resolution criterion</h3>
+<p>For an event with characteristic duration <code>T_event</code>, the number of acquired samples is:</p>
+<p>$$
+N_{event}=f_sT_{event}
+$$</p>
+<p>Therefore, if the design requires at least <code>N_req</code> samples during an event:</p>
+<p>$$
+f_s \geq \frac{N_{req}}{T_{event}}
+$$</p>
+<p>This criterion is particularly important for:</p>
+<ul>
+<li>wheel lock and wheel slip;</li>
+<li>brake-pressure buildup;</li>
+<li>suspension impacts;</li>
+<li>rapid steering input;</li>
+<li>transient acceleration and yaw response.</li>
+</ul>
+<p>Nyquist determines whether the frequency content can be represented. The transient criterion determines whether the <strong>time history is resolved sufficiently for engineering analysis</strong>.</p>
+<h3 id="14-filtering">1.4 Filtering</h3>
+<p>Analog signals must be filtered before ADC conversion to prevent unwanted high-frequency content from aliasing into the measurement band.</p>
+<p>The anti-aliasing filter must satisfy the relationship between:</p>
+<p>$$
+f_{signal},\quad f_{filter},\quad \frac{f_s}{2}
+$$</p>
+<p>The filter transition band must fit below the Nyquist frequency. A practical design should therefore not place the desired signal bandwidth directly at <code>f_s/2</code>.</p>
+<p>Digital filtering can subsequently be used for:</p>
+<ul>
+<li>noise reduction;</li>
+<li>smoothing;</li>
+<li>estimation;</li>
+<li>downsampling;</li>
+<li>feature extraction.</li>
+</ul>
+<p>Digital filtering <strong>cannot recover information that was already lost by undersampling</strong>.</p>
+<h3 id="15-safety-engineering-margin">1.5 Safety / engineering margin</h3>
+<p>A final sampling rate should be higher than the strict theoretical minimum when:</p>
+<ul>
+<li>the signal bandwidth is uncertain;</li>
+<li>the anti-aliasing filter is non-ideal;</li>
+<li>multiple sensors must be time-correlated;</li>
+<li>short transients are important;</li>
+<li>the rate is inexpensive for the MCU;</li>
+<li>the sensor/interface provides additional bandwidth.</li>
+</ul>
+<p>The margin is therefore selected from the complete system requirement rather than applying an arbitrary multiplier to every sensor.</p>
+<hr />
+<h2 id="2-system-level-initial-rates">2. System-Level Initial Rates</h2>
+<p>The following values are the <strong>initial engineering targets</strong> for the Datalogger.</p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th style="text-align: right;">Acquisition</th>
+<th style="text-align: right;">Processing</th>
+<th style="text-align: right;">CAN</th>
+<th>Primary reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wheel Speed</td>
+<td style="text-align: right;"><strong>1 kHz</strong></td>
+<td style="text-align: right;">1 kHz</td>
+<td style="text-align: right;"><strong>200 Hz</strong></td>
+<td>1 ms temporal resolution + wheel-speed transients</td>
+</tr>
+<tr>
+<td>Steering Angle</td>
+<td style="text-align: right;"><strong>200 Hz</strong></td>
+<td style="text-align: right;">200 Hz</td>
+<td style="text-align: right;"><strong>100 Hz</strong></td>
+<td>Fast driver input and cross-sensor correlation</td>
+</tr>
+<tr>
+<td>Suspension Position</td>
+<td style="text-align: right;"><strong>500 Hz</strong></td>
+<td style="text-align: right;">500 Hz</td>
+<td style="text-align: right;"><strong>200 Hz</strong></td>
+<td>Suspension transients and wheel-hop</td>
+</tr>
+<tr>
+<td>IMU</td>
+<td style="text-align: right;"><strong>400 Hz</strong></td>
+<td style="text-align: right;">400 Hz</td>
+<td style="text-align: right;"><strong>400 Hz</strong></td>
+<td>VN-300 output-rate limit and inertial bandwidth</td>
+</tr>
+<tr>
+<td>Brake Pressure</td>
+<td style="text-align: right;"><strong>1 kHz</strong></td>
+<td style="text-align: right;">1 kHz</td>
+<td style="text-align: right;"><strong>200 Hz</strong></td>
+<td>Fast pressure transients and brake/wheel correlation</td>
+</tr>
+<tr>
+<td>Temperatures</td>
+<td style="text-align: right;"><strong>20 Hz</strong></td>
+<td style="text-align: right;">10 Hz</td>
+<td style="text-align: right;"><strong>10 Hz</strong></td>
+<td>Thermal time constants are much slower</td>
+</tr>
+<tr>
+<td>Pitot Tube</td>
+<td style="text-align: right;"><strong>100 Hz</strong></td>
+<td style="text-align: right;">100 Hz</td>
+<td style="text-align: right;"><strong>50 Hz</strong></td>
+<td>Airspeed dynamics and sensor update margin</td>
+</tr>
+</tbody>
+</table>
+<p>These are not arbitrary values. Each section below derives the rate from physical behavior, timing requirements, sensor limits and system cost.</p>
+<blockquote>
+<p><strong>Important:</strong> Wheel Speed, Steering, Suspension and Brake Pressure rates are architecture targets until the final sensor models and measured vehicle data are available. The document deliberately does not treat estimated physical bandwidths as immutable facts.</p>
+</blockquote>
+<hr />
+<h2 id="3-sensor-acquisition-rates">3. Sensor Acquisition Rates</h2>
+<h3 id="31-wheel-speed">3.1 Wheel Speed</h3>
+<h4 id="311-what-must-be-measured">3.1.1 What must be measured?</h4>
+<p>The objective is not to reconstruct the electrical waveform of the wheel sensor. The objective is to obtain a sufficiently fast estimate of wheel rotational speed to analyze:</p>
+<ul>
+<li>braking;</li>
+<li>wheel lock;</li>
+<li>traction loss;</li>
+<li>wheel spin;</li>
+<li>wheel-to-wheel speed differences;</li>
+<li>wheel-hop-related variation.</li>
+</ul>
+<p>The raw sensor signal should therefore be measured using <strong>timer input capture</strong> whenever possible.</p>
+<p>For a pulse train:</p>
+<p>$$
+T_{pulse}=t_n-t_{n-1}
+$$</p>
+<p>and:</p>
+<p>$$
+f_{pulse}=\frac{1}{T_{pulse}}
+$$</p>
+<p>For <code>PPR</code> pulses per revolution:</p>
+<p>$$
+RPM=\frac{60f_{pulse}}{PPR}
+$$</p>
+<p>The wheel speed is then calculated from wheel circumference.</p>
+<h4 id="312-maximum-pulse-frequency">3.1.2 Maximum pulse frequency</h4>
+<p>For wheel diameter <code>D</code>, vehicle speed <code>v</code> and <code>PPR</code> pulses/revolution:</p>
+<p>$$
+f_{pulse}=\frac{v}{\pi D}PPR
+$$</p>
+<p>Example with <code>D = 0.50 m</code>, <code>v = 120 km/h = 33.33 m/s</code>:</p>
+<p>$$
+f_{pulse}=\frac{33.33}{\pi(0.50)}PPR
+$$</p>
+<p>Therefore:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">PPR</th>
+<th style="text-align: right;">Pulse frequency at 120 km/h</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">212 Hz</td>
+</tr>
+<tr>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">424 Hz</td>
+</tr>
+<tr>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">849 Hz</td>
+</tr>
+<tr>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">1.02 kHz</td>
+</tr>
+<tr>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">1.27 kHz</td>
+</tr>
+</tbody>
+</table>
+<p>This calculation is <strong>not</strong> the sampling-rate requirement of the wheel-speed variable. It is the requirement on the digital input/timer path.</p>
+<p>The final PPR and loaded wheel diameter must be inserted once the wheel-speed sensor is finalized.</p>
+<h4 id="313-braking-event">3.1.3 Braking event</h4>
+<p>Consider the reference event:</p>
+<p>$$
+80\ km/h\rightarrow50\ km/h
+$$</p>
+<p>in:</p>
+<p>$$
+1\ s
+$$</p>
+<p>The average deceleration is:</p>
+<p>$$
+v_0=22.22\ m/s
+$$</p>
+<p>$$
+v_1=13.89\ m/s
+$$</p>
+<p>$$
+a=\frac{13.89-22.22}{1}\approx-8.33\ m/s^2
+$$</p>
+<p>At different rates:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Rate</th>
+<th style="text-align: right;">Period</th>
+<th style="text-align: right;">Samples in 1 s</th>
+<th style="text-align: right;">Samples in 5 ms</th>
+<th style="text-align: right;">Samples in 10 ms</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">100 Hz</td>
+<td style="text-align: right;">10 ms</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">200 Hz</td>
+<td style="text-align: right;">5 ms</td>
+<td style="text-align: right;">201</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">500 Hz</td>
+<td style="text-align: right;">2 ms</td>
+<td style="text-align: right;">501</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>1 kHz</strong></td>
+<td style="text-align: right;"><strong>1 ms</strong></td>
+<td style="text-align: right;"><strong>1001</strong></td>
+<td style="text-align: right;"><strong>5</strong></td>
+<td style="text-align: right;"><strong>10</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">2 kHz</td>
+<td style="text-align: right;">0.5 ms</td>
+<td style="text-align: right;">2001</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">20</td>
+</tr>
+</tbody>
+</table>
+<p>If wheel lock develops over approximately 5–10 ms, 100 Hz cannot resolve the event adequately: it gives between 0.5 and 1 sample over the event.</p>
+<p>At 1 kHz, the same event contains 5–10 samples. This makes the onset, slope and timing of the wheel-speed deviation measurable rather than relying on a single sample transition.</p>
+<h4 id="314-why-not-2-khz">3.1.4 Why not 2 kHz?</h4>
+<p>2 kHz would provide more temporal resolution, but doubles the acquisition workload compared with 1 kHz.</p>
+<p>For the intended vehicle analysis, 1 ms resolution already provides 5 samples in a 5 ms event and 10 samples in a 10 ms event. Unless testing shows that relevant wheel-speed events contain meaningful dynamics below approximately 2.5 ms, the additional 2 kHz information is not justified by the current requirements.</p>
+<p>Therefore:</p>
+<p>$$
+\boxed{f_{acq}=1\ kHz}
+$$</p>
+<p>The value should be re-evaluated if measured wheel-lock transients show significant sub-5 ms behavior.</p>
+<h4 id="315-processing">3.1.5 Processing</h4>
+<p>Wheel-speed processing should run at 1 kHz so that the latest timer-capture measurement can be converted and filtered with approximately 1 ms update resolution.</p>
+<h4 id="316-can">3.1.6 CAN</h4>
+<p>Sending wheel speed at 1 kHz for all four wheels would be unnecessarily expensive on a 500 kbit/s CAN bus.</p>
+<p>Instead, the Slave keeps the high-rate measurement locally and transmits a lower-rate processed representation.</p>
+<p>Initial CAN rate:</p>
+<p>$$
+\boxed{f_{CAN}=200\ Hz}
+$$</p>
+<p>The four wheel speeds should preferably be packed into one CAN frame rather than four independent frames.</p>
+<hr />
+<h3 id="32-steering-angle">3.2 Steering Angle</h3>
+<h4 id="321-physical-behavior">3.2.1 Physical behavior</h4>
+<p>Steering is a human input, so its useful bandwidth is much lower than the IMU or wheel-speed pulse signal. However, the Datalogger must correlate steering input with the resulting yaw rate, lateral acceleration and suspension response.</p>
+<p>The critical requirement is therefore not only Nyquist bandwidth but also <strong>cross-sensor timing resolution</strong>.</p>
+<h4 id="322-candidate-rates">3.2.2 Candidate rates</h4>
+<p>Consider a fast steering event lasting 50 ms:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Rate</th>
+<th style="text-align: right;">Samples in 50 ms</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">50 Hz</td>
+<td style="text-align: right;">2.5</td>
+</tr>
+<tr>
+<td style="text-align: right;">100 Hz</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>200 Hz</strong></td>
+<td style="text-align: right;"><strong>10</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">500 Hz</td>
+<td style="text-align: right;">25</td>
+</tr>
+</tbody>
+</table>
+<p>At 50 Hz, a fast steering transient is represented by only 2–3 points. At 200 Hz, it is represented by approximately 10 points.</p>
+<p>This is valuable when comparing steering input against yaw-rate and lateral-acceleration response.</p>
+<h4 id="323-nyquist">3.2.3 Nyquist</h4>
+<p>The exact steering bandwidth must ultimately be measured from the vehicle data. If a maximum relevant frequency <code>f_max</code> is identified, the theoretical minimum is:</p>
+<p>$$
+f_s&gt;2f_{max}
+$$</p>
+<p>The selected 200 Hz rate leaves a large margin for the expected low-frequency human input while keeping the acquisition inexpensive.</p>
+<h4 id="324-selection">3.2.4 Selection</h4>
+<p>$$
+\boxed{f_{acq}=200\ Hz}
+$$</p>
+<p>$$
+\boxed{f_{process}=200\ Hz}
+$$</p>
+<p>$$
+\boxed{f_{CAN}=100\ Hz}
+$$</p>
+<p>200 Hz is selected because it provides 5 ms timing resolution for cross-channel analysis without imposing a significant ADC or CPU burden.</p>
+<hr />
+<h3 id="33-suspension-position">3.3 Suspension Position</h3>
+<h4 id="331-physical-behavior">3.3.1 Physical behavior</h4>
+<p>Suspension position contains several dynamic components:</p>
+<ul>
+<li>body motion;</li>
+<li>suspension natural modes;</li>
+<li>unsprung-mass / wheel-hop dynamics;</li>
+<li>bump and curb impacts;</li>
+<li>rapid compression and rebound.</li>
+</ul>
+<p>The previous engineering analysis identifies wheel-hop around 10–15 Hz and impact content around the 25 Hz region. These values should be validated experimentally rather than treated as exact limits. fileciteturn2file5L255-L264</p>
+<h4 id="332-nyquist">3.3.2 Nyquist</h4>
+<p>Using 25 Hz as the current design bandwidth:</p>
+<p>$$
+f_{Nyquist}=2(25)=50\ Hz
+$$</p>
+<p>100 Hz would satisfy Nyquist, but it gives only:</p>
+<p>$$
+\frac{100}{25}=4
+$$</p>
+<p>samples per 25 Hz cycle.</p>
+<p>At 500 Hz:</p>
+<p>$$
+\frac{500}{25}=20
+$$</p>
+<p>samples per cycle.</p>
+<h4 id="333-impact-resolution">3.3.3 Impact resolution</h4>
+<p>Consider a 20 ms suspension transient:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Rate</th>
+<th style="text-align: right;">Samples in 20 ms</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">100 Hz</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">200 Hz</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>500 Hz</strong></td>
+<td style="text-align: right;"><strong>10</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">1 kHz</td>
+<td style="text-align: right;">20</td>
+</tr>
+</tbody>
+</table>
+<p>For suspension analysis, the distinction between compression and rebound can be important. 500 Hz provides 10 points over a 20 ms event while remaining well within the capability of the STM32G431 ADC architecture for analog channels.</p>
+<h4 id="334-selection">3.3.4 Selection</h4>
+<p>$$
+\boxed{f_{acq}=500\ Hz}
+$$</p>
+<p>$$
+\boxed{f_{process}=500\ Hz}
+$$</p>
+<p>$$
+\boxed{f_{CAN}=200\ Hz}
+$$</p>
+<p>500 Hz is selected as a compromise between transient resolution and system cost. 1 kHz remains a possible test mode if experimental data demonstrates meaningful content that cannot be reconstructed at 500 Hz.</p>
+<hr />
+<h3 id="34-imu">3.4 IMU</h3>
+<h4 id="341-sensor-limited-rate">3.4.1 Sensor-limited rate</h4>
+<p>The VN-300 is different from the analog sensors because its bandwidth and output rate are specified by the manufacturer.</p>
+<p>The VN-300 specifies:</p>
+<ul>
+<li>accelerometer bandwidth: <strong>230 Hz</strong>;</li>
+<li>gyroscope bandwidth: <strong>265 Hz</strong>;</li>
+<li>IMU output rate: <strong>up to 400 Hz</strong>. citeturn0search36turn0search0</li>
+</ul>
+<p>Therefore the rate cannot simply be increased arbitrarily.</p>
+<p>For the accelerometer:</p>
+<p>$$
+f_{Nyquist}=2(230)=460\ Hz
+$$</p>
+<p>For the gyroscope:</p>
+<p>$$
+f_{Nyquist}=2(265)=530\ Hz
+$$</p>
+<p>However, the VN-300 used in this project provides IMU data at up to 400 Hz. </p>
+<p>This means the system cannot claim to preserve the full specified 230/265 Hz sensor bandwidth from a 400 Hz output stream. The sensor's own output-rate limitation must be considered when defining the usable acquisition bandwidth.</p>
+<h4 id="342-selection">3.4.2 Selection</h4>
+<p>$$
+\boxed{f_{acq}=400\ Hz}
+$$</p>
+<p>$$
+\boxed{f_{process}=400\ Hz}
+$$</p>
+<p>$$
+\boxed{f_{CAN}=400\ Hz}
+$$</p>
+<p>400 Hz is selected because it is the specified maximum IMU output rate of the VN-300.</p>
+<p>This is a stronger justification than selecting 500 Hz and then pretending the sensor can provide a 500 Hz measurement.</p>
+<p>If a future IMU configuration with a higher output rate is selected, this section must be re-evaluated.</p>
+<hr />
+<h3 id="35-brake-pressure">3.5 Brake Pressure</h3>
+<h4 id="351-critical-event">3.5.1 Critical event</h4>
+<p>Brake pressure is important because it must be correlated with wheel-speed behavior during braking.</p>
+<p>A representative rapid pressure ramp used for the engineering calculation is:</p>
+<p>$$
+0\rightarrow40\ bar
+$$</p>
+<p>in:</p>
+<p>$$
+150\ ms
+$$</p>
+<p>This produces an average pressure rate of:</p>
+<p>$$
+\frac{40}{0.15}\approx267\ bar/s
+$$</p>
+<h4 id="352-resolution-comparison">3.5.2 Resolution comparison</h4>
+<p>The pressure change between samples is approximately:</p>
+<p>$$
+\Delta P=267T_s
+$$</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Rate</th>
+<th style="text-align: right;">Period</th>
+<th style="text-align: right;">Approx. pressure change/sample</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">20 Hz</td>
+<td style="text-align: right;">50 ms</td>
+<td style="text-align: right;">13.3 bar</td>
+</tr>
+<tr>
+<td style="text-align: right;">100 Hz</td>
+<td style="text-align: right;">10 ms</td>
+<td style="text-align: right;">2.67 bar</td>
+</tr>
+<tr>
+<td style="text-align: right;">200 Hz</td>
+<td style="text-align: right;">5 ms</td>
+<td style="text-align: right;">1.33 bar</td>
+</tr>
+<tr>
+<td style="text-align: right;">500 Hz</td>
+<td style="text-align: right;">2 ms</td>
+<td style="text-align: right;">0.53 bar</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>1 kHz</strong></td>
+<td style="text-align: right;"><strong>1 ms</strong></td>
+<td style="text-align: right;"><strong>0.267 bar</strong></td>
+</tr>
+</tbody>
+</table>
+<p>At 20 Hz, the measurement jumps more than 13 bar per sample. That is too coarse to accurately locate the pressure buildup.</p>
+<p>At 200 Hz, the resolution is approximately 1.3 bar/sample, which is already useful.</p>
+<p>At 1 kHz, the same ramp changes only approximately 0.27 bar between samples and is represented by:</p>
+<p>$$
+1000(0.15)=150
+$$</p>
+<p>samples.</p>
+<h4 id="353-correlation-with-wheel-lock">3.5.3 Correlation with wheel lock</h4>
+<p>If the wheel-speed system is sampled at 1 kHz, acquiring brake pressure at 1 kHz provides the same 1 ms time base.</p>
+<p>This allows analysis of:</p>
+<div class="highlight"><pre><span></span><code>Brake pressure
+      |
+      | pressure buildup
+      v
+Wheel speed deviation
+      |
+      | wheel lock / slip onset
+      v
+Vehicle deceleration
+</code></pre></div>
+<p>with a common 1 ms acquisition grid.</p>
+<h4 id="354-selection">3.5.4 Selection</h4>
+<p>$$
+\boxed{f_{acq}=1\ kHz}
+$$</p>
+<p>$$
+\boxed{f_{process}=1\ kHz}
+$$</p>
+<p>$$
+\boxed{f_{CAN}=200\ Hz}
+$$</p>
+<p>The high-rate pressure measurement is kept locally for logging and event analysis. CAN carries the lower-rate processed value to avoid consuming the bus with redundant samples.</p>
+<p>The final pressure-sensor response time must be checked against the selected 1 kHz rate. If the transducer itself has a response time much slower than 1 ms, the additional samples do not add physical information.</p>
+<hr />
+<h3 id="36-temperatures">3.6 Temperatures</h3>
+<h4 id="361-physical-behavior">3.6.1 Physical behavior</h4>
+<p>Temperature is fundamentally different from wheel speed, pressure and IMU measurements.</p>
+<p>Thermal systems have comparatively long time constants because heat must be transferred through:</p>
+<ul>
+<li>the sensor package;</li>
+<li>mounting material;</li>
+<li>fluid or air;</li>
+<li>the measured component;</li>
+<li>surrounding structures.</li>
+</ul>
+<p>The relevant quantity is therefore normally a thermal time constant rather than a high-frequency vibration bandwidth.</p>
+<p>For a first-order thermal response:</p>
+<p>$$
+T(t)=T_{final}+(T_0-T_{final})e^{-t/\tau}
+$$</p>
+<p>where <code>τ</code> is the thermal time constant.</p>
+<p>The frequency-domain corner associated with this first-order system is:</p>
+<p>$$
+f_c=\frac{1}{2\pi\tau}
+$$</p>
+<h4 id="362-example">3.6.2 Example</h4>
+<p>If a temperature sensor has an effective thermal time constant of 0.5 s:</p>
+<p>$$
+f_c=\frac{1}{2\pi(0.5)}\approx0.32\ Hz
+$$</p>
+<p>Even a 20 Hz acquisition rate would provide:</p>
+<p>$$
+\frac{20}{0.32}\approx62
+$$</p>
+<p>samples per thermal corner cycle.</p>
+<p>Therefore, a 20 Hz acquisition target is already heavily oversampled for a typical thermal response.</p>
+<h4 id="363-selection">3.6.3 Selection</h4>
+<p>Because the final temperature sensor and mounting configuration determine the actual thermal time constant, the exact rate must be validated experimentally.</p>
+<p>Initial target:</p>
+<p>$$
+\boxed{f_{acq}=20\ Hz}
+$$</p>
+<p>$$
+\boxed{f_{process}=10\ Hz}
+$$</p>
+<p>$$
+\boxed{f_{CAN}=10\ Hz}
+$$</p>
+<p>This rate is intentionally conservative for temperature acquisition while avoiding unnecessary high-rate logging of slowly changing quantities.</p>
+<hr />
+<h3 id="37-pitot-tube">3.7 Pitot Tube</h3>
+<h4 id="371-physical-behavior">3.7.1 Physical behavior</h4>
+<p>The Pitot system measures differential pressure and converts it to airspeed.</p>
+<p>The relevant vehicle-level dynamics are much slower than wheel-speed or IMU transients. However, the sensor's own output rate and response time must also be considered.</p>
+<p>The current design target is 100 Hz acquisition so that a 10 ms time base is available for acceleration and braking analysis without making the Pitot channel a high-rate data consumer.</p>
+<h4 id="372-vehicle-acceleration-example">3.7.2 Vehicle acceleration example</h4>
+<p>Consider:</p>
+<p>$$
+50\ km/h\rightarrow100\ km/h
+$$</p>
+<p>in:</p>
+<p>$$
+2\ s
+$$</p>
+<p>At 100 Hz:</p>
+<p>$$
+N=100(2)=200
+$$</p>
+<p>samples.</p>
+<p>The average airspeed change between samples is:</p>
+<p>$$
+\Delta v=\frac{50}{200}=0.25\ km/h
+$$</p>
+<p>This is already fine temporal resolution for vehicle-level airspeed analysis.</p>
+<p>At 50 Hz the change is 0.5 km/h/sample, still useful, but 100 Hz gives additional margin for sensor dynamics and cross-correlation.</p>
+<h4 id="373-selection">3.7.3 Selection</h4>
+<p>$$
+\boxed{f_{acq}=100\ Hz}
+$$</p>
+<p>$$
+\boxed{f_{process}=100\ Hz}
+$$</p>
+<p>$$
+\boxed{f_{CAN}=50\ Hz}
+$$</p>
+<p>The final MS4525DO configuration must be checked against its selected digital output mode and actual response/update rate before freezing this requirement. The manufacturer provides the MS4525DO datasheet as the authoritative source for the selected part. urlMS4525DO documentationturn1search0</p>
+<hr />
+<h2 id="4-processing-rates">4. Processing Rates</h2>
+<p>Acquisition and processing are related but not necessarily identical.</p>
+<p>The processing rate is selected according to what the algorithm needs.</p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th style="text-align: right;">Acquisition</th>
+<th style="text-align: right;">Processing</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wheel Speed</td>
+<td style="text-align: right;">1 kHz</td>
+<td style="text-align: right;">1 kHz</td>
+<td>immediate wheel-speed update and slip detection</td>
+</tr>
+<tr>
+<td>Steering</td>
+<td style="text-align: right;">200 Hz</td>
+<td style="text-align: right;">200 Hz</td>
+<td>correlation with vehicle dynamics</td>
+</tr>
+<tr>
+<td>Suspension</td>
+<td style="text-align: right;">500 Hz</td>
+<td style="text-align: right;">500 Hz</td>
+<td>transient preservation before downsampling</td>
+</tr>
+<tr>
+<td>IMU</td>
+<td style="text-align: right;">400 Hz</td>
+<td style="text-align: right;">400 Hz</td>
+<td>preserve sensor output stream</td>
+</tr>
+<tr>
+<td>Brake Pressure</td>
+<td style="text-align: right;">1 kHz</td>
+<td style="text-align: right;">1 kHz</td>
+<td>pressure/wheel correlation</td>
+</tr>
+<tr>
+<td>Temperature</td>
+<td style="text-align: right;">20 Hz</td>
+<td style="text-align: right;">10 Hz</td>
+<td>thermal signal is slow</td>
+</tr>
+<tr>
+<td>Pitot</td>
+<td style="text-align: right;">100 Hz</td>
+<td style="text-align: right;">100 Hz</td>
+<td>pressure-to-speed conversion and filtering</td>
+</tr>
+</tbody>
+</table>
+<h3 id="41-filtering-and-downsampling">4.1 Filtering and downsampling</h3>
+<p>High-rate acquisition allows the Slave to perform filtering before reducing the rate for CAN.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Brake Pressure
+      |
+      | 1 kHz acquisition
+      v
+Anti-alias / signal conditioning
+      |
+      v
+Digital filtering
+      |
+      +----&gt; 1 kHz local log
+      |
+      +----&gt; 200 Hz CAN
+</code></pre></div>
+<p>The same architecture can be used for wheel speed and suspension position.</p>
+<p>The downsampling factor must be chosen only after filtering. Directly dropping samples can cause aliasing.</p>
+<hr />
+<h2 id="5-can-transmission-rates">5. CAN Transmission Rates</h2>
+<h3 id="51-why-can-rate-differs-from-acquisition-rate">5.1 Why CAN rate differs from acquisition rate</h3>
+<p>The Datalogger may need high-rate information internally without needing to transmit every sample over the vehicle CAN bus.</p>
+<p>Therefore:</p>
+<p>$$
+f_{CAN}\leq f_{acq}
+$$</p>
+<p>for the initial architecture.</p>
+<p>The high-rate data can be retained locally, while CAN carries:</p>
+<ul>
+<li>current values;</li>
+<li>filtered values;</li>
+<li>status;</li>
+<li>diagnostic information;</li>
+<li>event flags;</li>
+<li>lower-rate telemetry.</li>
+</ul>
+<h3 id="52-initial-can-rates">5.2 Initial CAN rates</h3>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th style="text-align: right;">Acquisition</th>
+<th style="text-align: right;">CAN</th>
+<th style="text-align: right;">Reduction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wheel Speed</td>
+<td style="text-align: right;">1000 Hz</td>
+<td style="text-align: right;">200 Hz</td>
+<td style="text-align: right;">5:1</td>
+</tr>
+<tr>
+<td>Steering</td>
+<td style="text-align: right;">200 Hz</td>
+<td style="text-align: right;">100 Hz</td>
+<td style="text-align: right;">2:1</td>
+</tr>
+<tr>
+<td>Suspension</td>
+<td style="text-align: right;">500 Hz</td>
+<td style="text-align: right;">200 Hz</td>
+<td style="text-align: right;">2.5:1</td>
+</tr>
+<tr>
+<td>IMU</td>
+<td style="text-align: right;">400 Hz</td>
+<td style="text-align: right;">400 Hz</td>
+<td style="text-align: right;">1:1</td>
+</tr>
+<tr>
+<td>Brake Pressure</td>
+<td style="text-align: right;">1000 Hz</td>
+<td style="text-align: right;">200 Hz</td>
+<td style="text-align: right;">5:1</td>
+</tr>
+<tr>
+<td>Temperature</td>
+<td style="text-align: right;">20 Hz</td>
+<td style="text-align: right;">10 Hz</td>
+<td style="text-align: right;">2:1</td>
+</tr>
+<tr>
+<td>Pitot</td>
+<td style="text-align: right;">100 Hz</td>
+<td style="text-align: right;">50 Hz</td>
+<td style="text-align: right;">2:1</td>
+</tr>
+</tbody>
+</table>
+<p>The reduction is intentional. The acquisition system preserves the higher-rate data; CAN is optimized for network-wide availability.</p>
+<hr />
+<h2 id="6-rate-allocation-can-budget">6. Rate Allocation / CAN Budget</h2>
+<h3 id="61-can-assumptions">6.1 CAN assumptions</h3>
+<p>Initial network assumptions:</p>
+<ul>
+<li>Classical CAN;</li>
+<li>nominal bitrate: <strong>500 kbit/s</strong>;</li>
+<li>standard 11-bit identifier;</li>
+<li>maximum 8-byte payload per frame;</li>
+<li>planning frame length: approximately <strong>128 bits nominal</strong> and up to approximately <strong>150 bits</strong> under conservative bit-stuffing assumptions.</li>
+</ul>
+<p>For planning:</p>
+<p>$$
+T_{frame,nominal}=\frac{128}{500000}=256\ \mu s
+$$</p>
+<p>$$
+T_{frame,worst}\approx\frac{150}{500000}=300\ \mu s
+$$</p>
+<p>The exact frame length depends on identifier, data length, bit stuffing and frame format. The 150-bit value is therefore a <strong>budgeting approximation</strong>, not a universal exact CAN frame length.</p>
+<h3 id="62-message-packing">6.2 Message packing</h3>
+<p>CAN budget must be calculated from <strong>frames</strong>, not individual physical signals.</p>
+<p>The preferred architecture is to pack signals with compatible rates into common frames.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>Wheel Speed Frame
++--------------------------------+
+| FL | FR | RL | RR | status    |
++--------------------------------+
+</code></pre></div>
+<p>This is preferable to four independent CAN frames.</p>
+<p>Similarly:</p>
+<div class="highlight"><pre><span></span><code>Brake Frame
++--------------------------------+
+| Front Pressure | Rear Pressure |
++--------------------------------+
+</code></pre></div>
+<p>and suspension channels can be grouped into one or more frames.</p>
+<h3 id="63-proposed-packed-frame-budget">6.3 Proposed packed-frame budget</h3>
+<p>An initial packed-frame architecture is:</p>
+<table>
+<thead>
+<tr>
+<th>Frame group</th>
+<th style="text-align: right;">Frames</th>
+<th style="text-align: right;">CAN rate</th>
+<th style="text-align: right;">Frame/s</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wheel Speed</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">200 Hz</td>
+<td style="text-align: right;">200</td>
+</tr>
+<tr>
+<td>Steering</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">100 Hz</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr>
+<td>Suspension</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">200 Hz</td>
+<td style="text-align: right;">400</td>
+</tr>
+<tr>
+<td>IMU</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">400 Hz</td>
+<td style="text-align: right;">800</td>
+</tr>
+<tr>
+<td>Brake Pressure</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">200 Hz</td>
+<td style="text-align: right;">200</td>
+</tr>
+<tr>
+<td>Pitot</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">50 Hz</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr>
+<td>Temperature</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">10 Hz</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>9</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>1760 frames/s</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Using the conservative 150-bit planning value:</p>
+<p>$$
+Load=1760\times\frac{150}{500000}
+$$</p>
+<p>$$
+Load\approx52.8\%
+$$</p>
+<p>Using the nominal 128-bit estimate:</p>
+<p>$$
+Load=1760\times\frac{128}{500000}
+$$</p>
+<p>$$
+Load\approx45.1\%
+$$</p>
+<p>This leaves substantial headroom for:</p>
+<ul>
+<li>other vehicle ECUs;</li>
+<li>diagnostic traffic;</li>
+<li>asynchronous events;</li>
+<li>future signals;</li>
+<li>retransmissions;</li>
+<li>changes in message packing.</li>
+</ul>
+<h3 id="64-why-sending-every-acquisition-sample-is-not-acceptable">6.4 Why sending every acquisition sample is not acceptable</h3>
+<p>If every physical signal were transmitted independently at its acquisition rate, the network would become saturated.</p>
+<p>For example, using the six main sensor groups without temperature and assuming four wheel-speed channels, four suspension channels and two brake-pressure channels:</p>
+<p>$$
+4(1000)+1(200)+4(500)+2(400)+2(1000)+1(100)
+$$</p>
+<p>$$
+=5700\ messages/s
+$$</p>
+<p>With 150 bits/frame:</p>
+<p>$$
+Load=5700\times\frac{150}{500000}
+$$</p>
+<p>$$
+Load=171\%
+$$</p>
+<p>This is physically impossible on a 500 kbit/s bus.</p>
+<p>The conclusion is not that the sensors must be sampled more slowly. The conclusion is that <strong>high-rate acquisition and network transmission are different architectural requirements</strong>.</p>
+<h3 id="65-why-packing-matters">6.5 Why packing matters</h3>
+<p>Without packing, four wheel-speed values at 200 Hz consume four frames per update:</p>
+<p>$$
+4\times200=800\ frames/s
+$$</p>
+<p>With packing, they consume one frame per update:</p>
+<p>$$
+1\times200=200\ frames/s
+$$</p>
+<p>The reduction is:</p>
+<p>$$
+\frac{800-200}{800}=75\%
+$$</p>
+<p>of the wheel-speed frame traffic.</p>
+<p>Therefore, message packing is part of the sampling-rate architecture, not merely a later optimization.</p>
+<hr />
+<h2 id="7-storage-budget">7. Storage Budget</h2>
+<p>Storage must be evaluated separately from CAN.</p>
+<p>For a logged record containing <code>B</code> bytes:</p>
+<p>$$
+R_{data}=N_{records/s}B
+$$</p>
+<p>and for duration <code>T</code>:</p>
+<p>$$
+Storage=R_{data}T
+$$</p>
+<p>If the local logger stores all high-rate acquisition streams, the storage rate must be calculated from the actual logging record format.</p>
+<p>For an illustrative 16-byte record:</p>
+<h4 id="main-high-rate-streams">Main high-rate streams</h4>
+<p>Approximate logical sample rate:</p>
+<p>$$
+4(1000)+1(200)+4(500)+2(400)+2(1000)+1(100)
+$$</p>
+<p>$$
+=5700\ samples/s
+$$</p>
+<p>At 16 bytes/sample:</p>
+<p>$$
+5700(16)=91.2\ kB/s
+$$</p>
+<p>Approximately:</p>
+<p>$$
+91.2\times3600\approx328\ MB/h
+$$</p>
+<p>This is an architectural estimate, not the final file size. The final storage requirement depends on:</p>
+<ul>
+<li>timestamp width;</li>
+<li>record headers;</li>
+<li>compression;</li>
+<li>binary format;</li>
+<li>whether raw and processed data are both stored;</li>
+<li>whether CAN frames are logged separately.</li>
+</ul>
+<p>The important point is that storage is feasible at these rates, but unnecessarily increasing every signal to several kHz would multiply the data volume without necessarily adding useful information.</p>
+<hr />
+<h2 id="8-mcu-acquisition-limitations">8. MCU / Acquisition Limitations</h2>
+<p>The STM32G431 is capable of high-rate acquisition. The device contains two 12-bit ADCs with up to 4 MSPS conversion rate at full resolution, plus DMA and timer peripherals suitable for deterministic acquisition. </p>
+<p>This does not mean that every channel can simply run at 4 MSPS. The complete acquisition chain must include:</p>
+<ul>
+<li>number of active ADC channels;</li>
+<li>ADC sampling time;</li>
+<li>source impedance;</li>
+<li>analog settling time;</li>
+<li>multiplexer settling;</li>
+<li>filtering;</li>
+<li>DMA transfers;</li>
+<li>CPU processing;</li>
+<li>FreeRTOS scheduling;</li>
+<li>memory bandwidth.</li>
+</ul>
+<p>The relevant engineering constraint is:</p>
+<p>$$
+T_{available}&gt;T_{conversion}+T_{transfer}+T_{processing}
+$$</p>
+<p>for every real-time acquisition path.</p>
+<h3 id="81-interrupts">8.1 Interrupts</h3>
+<p>High-frequency acquisition should use hardware peripherals and DMA where possible.</p>
+<p>A 1 kHz software interrupt for every analog sample is unnecessary if a timer-triggered ADC + DMA can fill a buffer autonomously.</p>
+<p>Wheel Speed should use timer input capture rather than a high-rate software GPIO polling loop.</p>
+<h3 id="82-timing-determinism">8.2 Timing determinism</h3>
+<p>A nominal frequency is not sufficient. The actual sampling interval should remain deterministic:</p>
+<p>$$
+T_s\approx constant
+$$</p>
+<p>Excessive CPU or bus load can introduce jitter. Therefore, a lower deterministic acquisition rate is preferable to a nominally higher rate that the firmware cannot sustain consistently.</p>
+<hr />
+<h2 id="9-what-happens-if-frequencies-are-increased-indiscriminately">9. What Happens If Frequencies Are Increased Indiscriminately?</h2>
+<p>Increasing every channel to 10 kHz would produce far more data, but most channels would not contain useful information at that rate.</p>
+<p>For example, increasing a 1 kHz wheel-speed acquisition to 10 kHz multiplies:</p>
+<ul>
+<li>timer-processing updates by 10;</li>
+<li>buffer traffic by 10;</li>
+<li>local data volume by 10;</li>
+<li>filtering workload by 10.</li>
+</ul>
+<p>Unless measurements demonstrate relevant dynamics below the 1 ms scale, this provides little engineering benefit.</p>
+<p>The correct design principle is therefore:</p>
+<blockquote>
+<p><strong>Use the highest rate justified by the required information, not the highest rate supported by the MCU.</strong></p>
+</blockquote>
+<hr />
+<h2 id="10-validation-plan">10. Validation Plan</h2>
+<p>The frequencies in this document should be validated experimentally before being frozen as final requirements.</p>
+<h3 id="101-fft-spectral-validation">10.1 FFT / spectral validation</h3>
+<p>Record representative signals at the highest practical rate and calculate their spectra.</p>
+<p>For each signal, determine:</p>
+<p>$$
+f_{useful,max}
+$$</p>
+<p>Then verify:</p>
+<p>$$
+f_{acq}&gt;2f_{useful,max}
+$$</p>
+<p>with practical filtering margin.</p>
+<h3 id="102-transient-validation">10.2 Transient validation</h3>
+<p>For each critical event, measure the shortest relevant duration:</p>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Required measurement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wheel lock</td>
+<td>wheel-speed divergence</td>
+</tr>
+<tr>
+<td>Brake application</td>
+<td>pressure buildup</td>
+</tr>
+<tr>
+<td>Curb / bump</td>
+<td>suspension displacement</td>
+</tr>
+<tr>
+<td>Slalom</td>
+<td>steering input</td>
+</tr>
+<tr>
+<td>Hard braking</td>
+<td>IMU acceleration / yaw response</td>
+</tr>
+<tr>
+<td>Acceleration</td>
+<td>Pitot / wheel speed</td>
+</tr>
+</tbody>
+</table>
+<p>Then calculate:</p>
+<p>$$
+N_{event}=f_sT_{event}
+$$</p>
+<p>The chosen rate should provide enough samples to identify the event reliably.</p>
+<h3 id="103-ab-sampling-rate-test">10.3 A/B sampling-rate test</h3>
+<p>When practical, compare recordings at:</p>
+<ul>
+<li>nominal rate;</li>
+<li>2× nominal rate;</li>
+<li>4× nominal rate.</li>
+</ul>
+<p>If downsampling the high-rate recording to the nominal rate produces no meaningful loss in the quantities of interest, the nominal rate is supported experimentally.</p>
+<h3 id="104-final-acceptance-criteria">10.4 Final acceptance criteria</h3>
+<p>A sampling rate should be considered final when:</p>
+<ol>
+<li>the sensor bandwidth is known;</li>
+<li>the anti-aliasing filter is defined;</li>
+<li>Nyquist is satisfied;</li>
+<li>critical transients have sufficient samples;</li>
+<li>the sensor/interface can sustain the rate;</li>
+<li>the MCU can sustain the rate deterministically;</li>
+<li>processing deadlines are satisfied;</li>
+<li>CAN utilization remains within the network budget;</li>
+<li>storage requirements are acceptable;</li>
+<li>test data confirms that increasing the rate further does not provide meaningful information.</li>
+</ol>
+<hr />
+<h2 id="11-final-rate-allocation">11. Final Rate Allocation</h2>
+<table>
+<thead>
+<tr>
+<th>Sensor</th>
+<th style="text-align: right;">Acquisition</th>
+<th style="text-align: right;">Processing</th>
+<th style="text-align: right;">CAN</th>
+<th>Main justification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Wheel Speed</strong></td>
+<td style="text-align: right;"><strong>1 kHz</strong></td>
+<td style="text-align: right;"><strong>1 kHz</strong></td>
+<td style="text-align: right;"><strong>200 Hz</strong></td>
+<td>1 ms resolution; 5 samples in a 5 ms event; timer capture handles raw pulse timing</td>
+</tr>
+<tr>
+<td><strong>Steering Angle</strong></td>
+<td style="text-align: right;"><strong>200 Hz</strong></td>
+<td style="text-align: right;"><strong>200 Hz</strong></td>
+<td style="text-align: right;"><strong>100 Hz</strong></td>
+<td>5 ms resolution for driver-input / vehicle-response correlation</td>
+</tr>
+<tr>
+<td><strong>Suspension Position</strong></td>
+<td style="text-align: right;"><strong>500 Hz</strong></td>
+<td style="text-align: right;"><strong>500 Hz</strong></td>
+<td style="text-align: right;"><strong>200 Hz</strong></td>
+<td>10 samples in a 20 ms transient; 20 samples/cycle at 25 Hz</td>
+</tr>
+<tr>
+<td><strong>IMU / VN-300</strong></td>
+<td style="text-align: right;"><strong>400 Hz</strong></td>
+<td style="text-align: right;"><strong>400 Hz</strong></td>
+<td style="text-align: right;"><strong>400 Hz</strong></td>
+<td>Matches VN-300 specified maximum IMU output rate</td>
+</tr>
+<tr>
+<td><strong>Brake Pressure</strong></td>
+<td style="text-align: right;"><strong>1 kHz</strong></td>
+<td style="text-align: right;"><strong>1 kHz</strong></td>
+<td style="text-align: right;"><strong>200 Hz</strong></td>
+<td>0.27 bar/sample for the 40 bar / 150 ms reference ramp</td>
+</tr>
+<tr>
+<td><strong>Pitot Tube</strong></td>
+<td style="text-align: right;"><strong>100 Hz</strong></td>
+<td style="text-align: right;"><strong>100 Hz</strong></td>
+<td style="text-align: right;"><strong>50 Hz</strong></td>
+<td>10 ms temporal resolution with low network cost</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="12-design-decision">12. Design Decision</h2>
+<p>The Datalogger does <strong>not</strong> use one common sampling frequency for all sensors.</p>
+<p>The rate allocation follows:</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Question</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Physical behavior</td>
+<td>What phenomenon are we measuring?</td>
+<td>Signal characteristics</td>
+</tr>
+<tr>
+<td>2. Critical event</td>
+<td>What is the fastest relevant event?</td>
+<td>Required temporal resolution</td>
+</tr>
+<tr>
+<td>3. Nyquist criterion</td>
+<td>What bandwidth must be sampled?</td>
+<td>Minimum theoretical rate</td>
+</tr>
+<tr>
+<td>4. Sensor limitations</td>
+<td>Can the sensor provide this rate?</td>
+<td>Sensor constraint</td>
+</tr>
+<tr>
+<td>5. MCU limitations</td>
+<td>Can the MCU acquire and process it?</td>
+<td>Hardware constraint</td>
+</tr>
+<tr>
+<td>6. CAN / storage budget</td>
+<td>Can the system transport and store the data?</td>
+<td>System constraint</td>
+</tr>
+<tr>
+<td>7. Final rate</td>
+<td>What rate satisfies all constraints?</td>
+<td>Selected sampling rate</td>
+</tr>
+</tbody>
+</table>
+<p>The resulting architecture deliberately separates acquisition from communication:</p>
+<div class="highlight"><pre><span></span><code>                       SENSOR
+                         |
+                         v
+                High-rate acquisition
+                         |
+                         v
+                Signal conditioning
+                         |
+                         v
+                   Digital filter
+                         |
+             +-----------+-----------+
+             |                       |
+             v                       v
+        Local logging           CAN transmission
+        high-rate data          lower-rate data
+</code></pre></div>
+<p>The high-rate acquisition is retained where it provides useful information for post-test analysis. CAN transmission is reduced and packed so that the vehicle network remains deterministic.</p>
+<p>The frequencies should be considered <strong>engineering requirements under validation</strong> until final sensor specifications and vehicle test data confirm them.<br />
+'</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
