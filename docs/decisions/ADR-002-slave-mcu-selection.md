@@ -21,12 +21,13 @@ the hardware complexity and cost reasonable.
 
 ## Decision
 
-The STM32G431C8T6 will be used as the main microcontroller of the
-Datalogger Slave.
+The STM32G431C8T6T**R** will be used as the main microcontroller of the
+Datalogger Slave. The complete selected ordering code is
+**STM32G431C8T6TR**.
 
 ## Alternatives Considered
 
-### STM32G431C8T6
+### STM32G431C8T6TR
 
 - CAN FD peripheral
 - Multiple timers

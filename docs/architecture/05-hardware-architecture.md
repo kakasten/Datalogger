@@ -23,12 +23,12 @@ The system is composed of two main hardware roles:
 * Master
 * Slave
 
-The Master is based on a Microprocessor Unit (MPU), while each Slave uses a Microcontroller Unit (MCU) for local sensor acquisition and processing.
+The Master is based on the **Milk-V DUO S**, the selected Microprocessor Unit (MPU), while each Slave uses the **STM32G431C8T6TR**, the selected Microcontroller Unit (MCU), for local sensor acquisition and processing.
 
 ```text
                            ┌────────────────────────────┐
                            │          MASTER            │
-                           │            MPU             │
+                           │      Milk-V DUO S (MPU)   │
                            │                            │
                            │  Processing                │
                            │  Data Logging              │
@@ -42,7 +42,7 @@ The Master is based on a Microprocessor Unit (MPU), while each Slave uses a Micr
                   │                                           │
        ┌──────────▼──────────┐                    ┌──────────▼──────────┐
        │       SLAVE A       │                    │       SLAVE B       │
-       │         MCU         │                    │         MCU         │
+       │ STM32G431C8T6TR MCU │                    │ STM32G431C8T6TR MCU │
        │                     │                    │                     │
        │ Signal Acquisition  │                    │ Signal Acquisition  │
        │ Signal Conditioning │                    │ Signal Conditioning │
@@ -74,7 +74,7 @@ The Master is the central processing and data management module of the Datalogge
 
 The Master hardware is composed of:
 
-* MPU
+* Milk-V DUO S (MPU)
 * Non-volatile storage
 * CAN interface
 * Ethernet interface
@@ -107,7 +107,7 @@ Multiple Slave modules can be deployed throughout the vehicle according to senso
 
 Each Slave is composed of:
 
-* MCU
+* STM32G431C8T6TR (MCU)
 * ADC interfaces
 * Signal conditioning circuits
 * Digital input interfaces

@@ -49,6 +49,16 @@ Our approach solves these problems by **bringing processing to the sensor**, rat
 
 ## 🧩 System Architecture
 
+### Selected Processing Units
+
+The current hardware definition uses the following processing units:
+
+| System role | Component | Responsibility |
+| --- | --- | --- |
+| Master | **Milk-V DUO S** (MPU) | High-level processing, data logging, telemetry, and system management |
+| Slave | **STM32G431C8T6TR** (MCU) | Local sensor acquisition, signal processing, and CAN communication |
+
+
 The platform is organized into two core functional blocks:
 
 ### 🔹 Master Module
@@ -62,7 +72,7 @@ The Master module is the platform's **central management point**. Its responsibi
 
 The Master's architecture is designed to be **independent of specific implementation technologies** — allowing different software solutions, operating systems, communication protocols, or storage formats to be adopted as the project evolves, without compromising the platform's overall organization.
 
-In the current implementation, the Master runs on an **MPU (processing unit)** using an **RTOS (Real-Time Operating System)** as its software framework, responsible for coordinating logging, processing, and telemetry tasks.
+In the current implementation, the Master runs on the **Milk-V DUO S**, the selected **MPU (Microprocessor Unit)**, using an **RTOS (Real-Time Operating System)** as its software framework, responsible for coordinating logging, processing, and telemetry tasks.
 
 ### 🔹 Slave Modules
 
@@ -73,7 +83,7 @@ Slave modules are responsible for **local acquisition** of signals coming from t
 - Initial data processing
 - Delivery of processed data to the vehicle's communication network
 
-Each Slave is built around a **dedicated microcontroller (MCU)**, responsible for local acquisition and for communicating over the **CAN** bus, which connects all modules to the Master.
+Each Slave is built around the **STM32G431C8T6TR**, the selected **MCU (Microcontroller Unit)**, responsible for local acquisition and for communicating over the **CAN** bus, which connects all modules to the Master.
 
 Each module can be **specialized** according to the type of signal it needs to acquire:
 
