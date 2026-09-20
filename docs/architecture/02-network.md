@@ -53,6 +53,8 @@ The CAN bus serves as the system backbone, connecting the Master module to one o
 
 ## CAN Network
 
+The preliminary message count, priority classes, and identifier allocation are defined in the [CAN Bus Budget](07-can-bus-budget.md). That document is the baseline for implementation and must be updated whenever message rates, payloads, or node count change.
+
 ### CAN Purpose
 
 The CAN bus is the primary communication channel of the Datalogger system.

@@ -17,6 +17,15 @@ The Datalogger system is a modular data acquisition platform designed for Formul
 
 ---
 
+## Selected Processing Units
+
+| System role | Component | Responsibility |
+| --- | --- | --- |
+| Master | **Milk-V DUO S** (MPU) | High-level processing, data logging, telemetry, and system management |
+| Slave | **STM32G431C8T6TR** (MCU) | Local sensor acquisition, signal processing, and CAN communication |
+
+---
+
 ## System Components
 
 The system is composed of two primary modules:
@@ -33,7 +42,7 @@ Each Slave is responsible for acquiring sensors located near its installation po
 ```text
                               ┌────────────────────────────┐
                               │           Master           │
-                              │            MPU             │
+                              │      Milk-V DUO S (MPU)   │
                               │     ROS 2 • Data Logging   │
                               │         Telemetry          │
                               └────────────┬───────────────┘
@@ -44,7 +53,7 @@ Each Slave is responsible for acquiring sensors located near its installation po
                  │                                                 │
       ┌──────────▼──────────┐                           ┌──────────▼──────────┐
       │       Slave A       │                           │       Slave B       │
-      │         MCU         │                           │         MCU         │
+      │ STM32G431C8T6TR MCU │                           │ STM32G431C8T6TR MCU │
       │ Analog • Digital IO │                           │ Analog • Digital IO │
       └──────────┬──────────┘                           └──────────┬──────────┘
                  │                                                 │
